@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="sk" data-root="../" class="has-demo">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-mvnHwz+lJQZdVAYqqUA1AagJMWjuGlUGzmpSslu4MpQ='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; manifest-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Návrh webu – Zápasy a výsledky | OŠK Slovan Beckov</title>
+<meta name="description" content="Program a výsledky všetkých tímov OŠK Slovan Beckov v sezóne 2026/27.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Návrh webu – Zápasy a výsledky | OŠK Slovan Beckov">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sk_SK">
+<meta name="theme-color" content="#1d3480">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="preload" href="../fonts/rubik-800.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="../fonts/rubik-700.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="../fonts/lora-400.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="../css/site.css">
+<script>var d=document.documentElement;d.classList.add('js');if(/[?&](tim|kde)=/.test(location.search)){d.classList.add('flt');addEventListener('load',function(){d.classList.remove('flt')})}</script>
+<script type="module" src="../js/site.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#obsah">Preskočiť na obsah</a>
+<p class="demo">Návrh webu · nie je to oficiálna stránka klubu</p>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="../"><img src="../img/erb-128.webp" alt="" width="46" height="46"><span class="brand-t"><span class="brand-n">OŠK Slovan Beckov</span><span class="brand-s">futbal pod hradom</span></span><span class="sr">, úvod</span></a>
+    <nav class="nav" aria-label="Hlavné menu"><ul><li><a href="../zapasy/" aria-current="page">Zápasy</a></li><li><a href="../tabulky/">Tabuľky</a></li><li><a href="../timy/">Tímy</a></li><li><a href="../mladez/">Mládež</a></li><li><a href="../klub/">Klub a hradby</a></li><li><a href="../ihrisko/">Ihrisko</a></li><li><a href="../kontakt/">Kontakt</a></li></ul></nav>
+    <button class="menu-btn" type="button" aria-haspopup="dialog" aria-controls="menu"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
+  </div>
+</header>
+<dialog class="menu" id="menu" aria-label="Menu">
+  <div class="bridge">
+    <div class="bridge-top"><span class="bridge-k">Padací most</span><button class="menu-x" type="button" data-close><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Zavrieť</span></button></div>
+    <nav aria-label="Menu na telefóne"><ul class="bridge-nav"><li><a href="../">Úvod</a></li><li><a href="../zapasy/" aria-current="page">Zápasy</a></li><li><a href="../tabulky/">Tabuľky</a></li><li><a href="../timy/">Tímy</a></li><li><a href="../mladez/">Mládež</a></li><li><a href="../klub/">Klub a hradby</a></li><li><a href="../ihrisko/">Ihrisko</a></li><li><a href="../kontakt/">Kontakt</a></li></ul></nav>
+  </div>
+</dialog>
+<main id="obsah">
+<section class="phead"><div class="wrap phead-in">
+  <div><nav class="crumbs" aria-label="Omrvinky"><a href="../">Úvod</a><span aria-current="page">Zápasy</span></nav>
+  <h1 class="h1">Zápasy a výsledky</h1><p class="phead-sub">Ročník 2026/27, všetky tímy. Výsledky, góly a karty preberáme zo Sportnetu.</p></div>
+</div></section>
+<section class="sec sec--first"><div class="wrap">
+  <div class="filters" data-filters>
+    <div class="chips" role="group" aria-label="Tím"><button type="button" class="chip" data-f-team="" aria-pressed="true">Všetky</button><button type="button" class="chip" data-f-team="a-muzstvo" aria-pressed="false">A-mužstvo</button><button type="button" class="chip" data-f-team="u15-starsi-ziaci" aria-pressed="false">U15</button><button type="button" class="chip" data-f-team="u13-mladsi-ziaci" aria-pressed="false">U13</button><button type="button" class="chip" data-f-team="u11-pripravka" aria-pressed="false">U11</button><button type="button" class="chip" data-f-team="u9-pripravka" aria-pressed="false">U9</button></div>
+    <div class="chips" role="group" aria-label="Miesto"><button type="button" class="chip" data-f-where="" aria-pressed="true">Doma aj vonku</button><button type="button" class="chip" data-f-where="doma" aria-pressed="false">Doma</button><button type="button" class="chip" data-f-where="vonku" aria-pressed="false">Vonku</button></div>
+  </div>
+  <div class="cols2 cols2--list">
+    <section aria-labelledby="z-prog"><h2 class="h2" id="z-prog">Program</h2><section class="month" data-month><h3 class="month-h">marec 2027</h3><ol class="mlist mlist--tw"><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-03-21-u15-ofk-cachtice/">
+  <span class="tw-t"><time datetime="2027-03-21">21. 3.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OFK Čachtice</span><span class="tw-k"><span class="nw">U15</span> · 15. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="vonku"><a class="tw" href="../zapasy/2027-03-21-a-fk-melcice-lieskove/">
+  <span class="tw-t"><time datetime="2027-03-21">21. 3.</time><span>ne 15:00</span></span>
+  <span class="tw-b"><span class="tw-o">FK Melčice-Lieskové</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 14. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-03-26-u9-tj-jednota-brestovec/">
+  <span class="tw-t"><time datetime="2027-03-26">26. 3.</time><span>pi 15:00</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Jednota Brestovec</span><span class="tw-k"><span class="nw">U9</span> · 10. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-03-27-u11-tj-iskra-moravske-lieskove/">
+  <span class="tw-t"><time datetime="2027-03-27">27. 3.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Iskra Moravské Lieskové</span><span class="tw-k"><span class="nw">U11</span> · 2. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-03-27-u13-tj-zavazan-kalnica/">
+  <span class="tw-t"><time datetime="2027-03-27">27. 3.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Zavažan Kálnica</span><span class="tw-k"><span class="nw">U13</span> · 10. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-03-28-u15-tj-iskra-moravske-lieskove/">
+  <span class="tw-t"><time datetime="2027-03-28">28. 3.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Iskra Moravské Lieskové</span><span class="tw-k"><span class="nw">U15</span> · 16. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="doma"><a class="tw" href="../zapasy/2027-03-28-a-fks-nemsova/">
+  <span class="tw-t"><time datetime="2027-03-28">28. 3.</time><span>ne 15:00</span></span>
+  <span class="tw-b"><span class="tw-o">FKS Nemšová</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 15. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li></ol></section><section class="month" data-month><h3 class="month-h">apríl 2027</h3><ol class="mlist mlist--tw"><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-04-02-u9-tj-spartak-horna-streda/">
+  <span class="tw-t"><time datetime="2027-04-02">2. 4.</time><span>pi 16:00</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Spartak Horná Streda</span><span class="tw-k"><span class="nw">U9</span> · 11. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-04-03-u11-mfk-stara-tura/">
+  <span class="tw-t"><time datetime="2027-04-03">3. 4.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">MFK Stará Turá</span><span class="tw-k"><span class="nw">U11</span> · 12. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-04-03-u13-tj-spartak-horna-streda/">
+  <span class="tw-t"><time datetime="2027-04-03">3. 4.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Spartak Horná Streda</span><span class="tw-k"><span class="nw">U13</span> · 11. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-04-04-u15-fk-potvorice/">
+  <span class="tw-t"><time datetime="2027-04-04">4. 4.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">FK Potvorice</span><span class="tw-k"><span class="nw">U15</span> · 17. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="vonku"><a class="tw" href="../zapasy/2027-04-04-a-fk-koseca/">
+  <span class="tw-t"><time datetime="2027-04-04">4. 4.</time><span>ne 16:00</span></span>
+  <span class="tw-b"><span class="tw-o">FK Košeca</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 16. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-04-09-u9-osk-horka-nad-vahom/">
+  <span class="tw-t"><time datetime="2027-04-09">9. 4.</time><span>pi 16:00</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Hôrka nad Váhom</span><span class="tw-k"><span class="nw">U9</span> · 12. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-04-10-u11-tj-iskra-moravske-lieskove/">
+  <span class="tw-t"><time datetime="2027-04-10">10. 4.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Iskra Moravské Lieskové</span><span class="tw-k"><span class="nw">U11</span> · 13. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-04-10-u13-fk-bradlan-brezova-pod-bradlom/">
+  <span class="tw-t"><time datetime="2027-04-10">10. 4.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">FK Bradlan Brezová pod Bradlom</span><span class="tw-k"><span class="nw">U13</span> · 12. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-04-11-u15-osk-podolie/">
+  <span class="tw-t"><time datetime="2027-04-11">11. 4.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Podolie</span><span class="tw-k"><span class="nw">U15</span> · 18. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="doma"><a class="tw" href="../zapasy/2027-04-11-a-tj-spartak-lysa-pod-makytou/">
+  <span class="tw-t"><time datetime="2027-04-11">11. 4.</time><span>ne 16:00</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Spartak Lysá pod Makytou</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 17. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-04-16-u9-fk-bradlan-brezova-pod-bradlom/">
+  <span class="tw-t"><time datetime="2027-04-16">16. 4.</time><span>pi 16:30</span></span>
+  <span class="tw-b"><span class="tw-o">FK Bradlan Brezová pod Bradlom</span><span class="tw-k"><span class="nw">U9</span> · 13. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-04-17-u11-tj-spartak-horna-streda/">
+  <span class="tw-t"><time datetime="2027-04-17">17. 4.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Spartak Horná Streda</span><span class="tw-k"><span class="nw">U11</span> · 14. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-04-17-u13-tj-druzstevnik-hradok/">
+  <span class="tw-t"><time datetime="2027-04-17">17. 4.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Družstevník Hrádok</span><span class="tw-k"><span class="nw">U13</span> · 13. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-04-18-u15-tj-slovan-rovnost-krajne/">
+  <span class="tw-t"><time datetime="2027-04-18">18. 4.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Slovan Rovnosť Krajné</span><span class="tw-k"><span class="nw">U15</span> · 19. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="vonku"><a class="tw" href="../zapasy/2027-04-18-a-fk-klucove/">
+  <span class="tw-t"><time datetime="2027-04-18">18. 4.</time><span>ne 16:30</span></span>
+  <span class="tw-b"><span class="tw-o">FK Kľúčové</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 18. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-04-23-u9-osk-bosaca/">
+  <span class="tw-t"><time datetime="2027-04-23">23. 4.</time><span>pi 16:30</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Bošáca</span><span class="tw-k"><span class="nw">U9</span> · 14. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-04-24-u11-tj-druzstevnik-lubina-kopanice/">
+  <span class="tw-t"><time datetime="2027-04-24">24. 4.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Družstevník Lubina – kopanice</span><span class="tw-k"><span class="nw">U11</span> · 15. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-04-24-u13-psk-bzince-pod-javorinou/">
+  <span class="tw-t"><time datetime="2027-04-24">24. 4.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">PŠK Bzince pod Javorinou</span><span class="tw-k"><span class="nw">U13</span> · 14. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-04-25-u15-tj-druzstevnik-hradok/">
+  <span class="tw-t"><time datetime="2027-04-25">25. 4.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Družstevník Hrádok</span><span class="tw-k"><span class="nw">U15</span> · 20. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="doma"><a class="tw" href="../zapasy/2027-04-25-a-tj-slovan-kosecke-podhradie/">
+  <span class="tw-t"><time datetime="2027-04-25">25. 4.</time><span>ne 16:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Slovan Košecké Podhradie</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 19. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-04-30-u9-mfk-stara-tura/">
+  <span class="tw-t"><time datetime="2027-04-30">30. 4.</time><span>pi 16:30</span></span>
+  <span class="tw-b"><span class="tw-o">MFK Stará Turá</span><span class="tw-k"><span class="nw">U9</span> · 15. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li></ol></section><section class="month" data-month><h3 class="month-h">máj 2027</h3><ol class="mlist mlist--tw"><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-05-01-u11-fk-bradlan-brezova-pod-bradlom/">
+  <span class="tw-t"><time datetime="2027-05-01">1. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">FK Bradlan Brezová pod Bradlom</span><span class="tw-k"><span class="nw">U11</span> · 16. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-05-01-u13-osk-podolie/">
+  <span class="tw-t"><time datetime="2027-05-01">1. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Podolie</span><span class="tw-k"><span class="nw">U13</span> · 15. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-05-02-u15-osk-bosaca/">
+  <span class="tw-t"><time datetime="2027-05-02">2. 5.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Bošáca</span><span class="tw-k"><span class="nw">U15</span> · 21. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="vonku"><a class="tw" href="../zapasy/2027-05-02-a-osk-podolie/">
+  <span class="tw-t"><time datetime="2027-05-02">2. 5.</time><span>ne 17:00</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Podolie</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 20. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-05-07-u9-sk-dolne-srnie/">
+  <span class="tw-t"><time datetime="2027-05-07">7. 5.</time><span>pi 17:00</span></span>
+  <span class="tw-b"><span class="tw-o">ŠK Dolné Srnie</span><span class="tw-k"><span class="nw">U9</span> · 16. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-05-08-u11-osk-horka-nad-vahom/">
+  <span class="tw-t"><time datetime="2027-05-08">8. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Hôrka nad Váhom</span><span class="tw-k"><span class="nw">U11</span> · 17. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-05-08-u13-ofk-cachtice/">
+  <span class="tw-t"><time datetime="2027-05-08">8. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OFK Čachtice</span><span class="tw-k"><span class="nw">U13</span> · 16. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-05-09-u15-ofk-vrbovce/">
+  <span class="tw-t"><time datetime="2027-05-09">9. 5.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OFK Vrbovce</span><span class="tw-k"><span class="nw">U15</span> · 22. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="vonku"><a class="tw" href="../zapasy/2027-05-09-a-tj-tatran-ladce/">
+  <span class="tw-t"><time datetime="2027-05-09">9. 5.</time><span>ne 17:00</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Tatran Ladce</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 21. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-05-14-u9-tj-jednota-brestovec/">
+  <span class="tw-t"><time datetime="2027-05-14">14. 5.</time><span>pi 17:00</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Jednota Brestovec</span><span class="tw-k"><span class="nw">U9</span> · 17. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-05-15-u11-tj-druzstevnik-hradok/">
+  <span class="tw-t"><time datetime="2027-05-15">15. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Družstevník Hrádok</span><span class="tw-k"><span class="nw">U11</span> · 18. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-05-15-u13-tj-zavazan-kalnica/">
+  <span class="tw-t"><time datetime="2027-05-15">15. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Zavažan Kálnica</span><span class="tw-k"><span class="nw">U13</span> · 17. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="vonku"><a class="tw" href="../zapasy/2027-05-16-a-tj-start-tuchyna/">
+  <span class="tw-t"><time datetime="2027-05-16">16. 5.</time><span>ne 17:00</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Štart Tuchyňa</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 22. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-05-21-u9-tj-spartak-horna-streda/">
+  <span class="tw-t"><time datetime="2027-05-21">21. 5.</time><span>pi 17:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Spartak Horná Streda</span><span class="tw-k"><span class="nw">U9</span> · 18. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-05-22-u11-psk-bzince-pod-javorinou/">
+  <span class="tw-t"><time datetime="2027-05-22">22. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">PŠK Bzince pod Javorinou</span><span class="tw-k"><span class="nw">U11</span> · 19. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-05-22-u13-tj-spartak-horna-streda/">
+  <span class="tw-t"><time datetime="2027-05-22">22. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Spartak Horná Streda</span><span class="tw-k"><span class="nw">U13</span> · 18. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-05-23-u15-ofk-cachtice/">
+  <span class="tw-t"><time datetime="2027-05-23">23. 5.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OFK Čachtice</span><span class="tw-k"><span class="nw">U15</span> · 24. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="vonku"><a class="tw" href="../zapasy/2027-05-23-a-tj-plevnik-drienove/">
+  <span class="tw-t"><time datetime="2027-05-23">23. 5.</time><span>ne 17:00</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Plevník-Drienové</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 23. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-05-28-u9-osk-horka-nad-vahom/">
+  <span class="tw-t"><time datetime="2027-05-28">28. 5.</time><span>pi 17:30</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Hôrka nad Váhom</span><span class="tw-k"><span class="nw">U9</span> · 19. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-05-29-u11-mfk-vrbove-b/">
+  <span class="tw-t"><time datetime="2027-05-29">29. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">MFK Vrbové B</span><span class="tw-k"><span class="nw">U11</span> · 20. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-05-29-u13-fk-bradlan-brezova-pod-bradlom/">
+  <span class="tw-t"><time datetime="2027-05-29">29. 5.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">FK Bradlan Brezová pod Bradlom</span><span class="tw-k"><span class="nw">U13</span> · 19. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-05-30-u15-tj-iskra-moravske-lieskove/">
+  <span class="tw-t"><time datetime="2027-05-30">30. 5.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Iskra Moravské Lieskové</span><span class="tw-k"><span class="nw">U15</span> · 25. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="doma"><a class="tw" href="../zapasy/2027-05-30-a-tj-vapec-horna-poruba/">
+  <span class="tw-t"><time datetime="2027-05-30">30. 5.</time><span>ne 17:00</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Vápeč Horná Poruba</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 24. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li></ol></section><section class="month" data-month><h3 class="month-h">jún 2027</h3><ol class="mlist mlist--tw"><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-06-04-u9-fk-bradlan-brezova-pod-bradlom/">
+  <span class="tw-t"><time datetime="2027-06-04">4. 6.</time><span>pi 17:30</span></span>
+  <span class="tw-b"><span class="tw-o">FK Bradlan Brezová pod Bradlom</span><span class="tw-k"><span class="nw">U9</span> · 20. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="doma"><a class="tw" href="../zapasy/2027-06-05-u11-osk-bosaca/">
+  <span class="tw-t"><time datetime="2027-06-05">5. 6.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Bošáca</span><span class="tw-k"><span class="nw">U11</span> · 21. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-06-05-u13-tj-druzstevnik-hradok/">
+  <span class="tw-t"><time datetime="2027-06-05">5. 6.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Družstevník Hrádok</span><span class="tw-k"><span class="nw">U13</span> · 20. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-06-06-u15-fk-potvorice/">
+  <span class="tw-t"><time datetime="2027-06-06">6. 6.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">FK Potvorice</span><span class="tw-k"><span class="nw">U15</span> · 26. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="vonku"><a class="tw" href="../zapasy/2027-06-06-a-fk-nova-dubnica/">
+  <span class="tw-t"><time datetime="2027-06-06">6. 6.</time><span>ne 17:00</span></span>
+  <span class="tw-b"><span class="tw-o">FK Nová Dubnica</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 25. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-06-11-u9-osk-bosaca/">
+  <span class="tw-t"><time datetime="2027-06-11">11. 6.</time><span>pi 17:30</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Bošáca</span><span class="tw-k"><span class="nw">U9</span> · 21. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="vonku"><a class="tw" href="../zapasy/2027-06-12-u11-ofk-cachtice/">
+  <span class="tw-t"><time datetime="2027-06-12">12. 6.</time><span>so 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OFK Čachtice</span><span class="tw-k"><span class="nw">U11</span> · 22. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="tw" href="../zapasy/2027-06-13-u13-psk-bzince-pod-javorinou/">
+  <span class="tw-t"><time datetime="2027-06-13">13. 6.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">PŠK Bzince pod Javorinou</span><span class="tw-k"><span class="nw">U13</span> · 21. kolo</span></span>
+  <span class="tw-w tw-w--a">vonku</span>
+</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="doma"><a class="tw" href="../zapasy/2027-06-13-u15-osk-podolie/">
+  <span class="tw-t"><time datetime="2027-06-13">13. 6.</time><span>ne 10:30</span></span>
+  <span class="tw-b"><span class="tw-o">OŠK Podolie</span><span class="tw-k"><span class="nw">U15</span> · 27. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="doma"><a class="tw" href="../zapasy/2027-06-13-a-tj-povazan-pruske/">
+  <span class="tw-t"><time datetime="2027-06-13">13. 6.</time><span>ne 17:00</span></span>
+  <span class="tw-b"><span class="tw-o">TJ Považan Pruské</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 26. kolo</span></span>
+  <span class="tw-w tw-w--h">doma</span>
+</a></li></ol></section><p class="empty" data-empty hidden>Pre tento výber nie je naplánovaný žiadny zápas.</p></section>
+    <section aria-labelledby="z-vys"><h2 class="h2" id="z-vys">Výsledky</h2><ul class="st-key" aria-hidden="true"><li><span class="k k--w"></span>výhra</li><li><span class="k k--d"></span>remíza</li><li><span class="k k--l"></span>prehra</li><li><span class="k k--n"></span>bez výsledku</li></ul><section class="month" data-month><h3 class="month-h">november 2026</h3><ol class="mlist mlist--wall"><li class="mrow mrow--st st--s" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="stone stone--w" href="../zapasy/2026-11-07-u13-ofk-cachtice/">
+  <span class="stone-s"><span class="sr">Výhra, </span>0:6</span>
+  <span class="stone-o">OFK Čachtice</span>
+  <span class="stone-k">7. 11. · <span class="nw">U13</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--m" data-team="a-muzstvo" data-where="vonku"><a class="stone stone--w" href="../zapasy/2026-11-01-a-tj-povazan-pruske/">
+  <span class="stone-s"><span class="sr">Výhra, </span>0:4</span>
+  <span class="stone-o">TJ Považan Pruské</span>
+  <span class="stone-k">1. 11. · <span class="nw">A-mužstvo</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u15-starsi-ziaci" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-11-01-u15-ofk-vrbovce/">
+  <span class="stone-s"><span class="sr">Prehra, </span>4:6</span>
+  <span class="stone-o">OFK Vrbovce</span>
+  <span class="stone-k">1. 11. · <span class="nw">U15</span> · doma</span>
+</a></li></ol></section><section class="month" data-month><h3 class="month-h">október 2026</h3><ol class="mlist mlist--wall"><li class="mrow mrow--st st--m" data-team="a-muzstvo" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-10-25-a-fk-nova-dubnica/">
+  <span class="stone-s"><span class="sr">Prehra, </span>0:5</span>
+  <span class="stone-o">FK Nová Dubnica</span>
+  <span class="stone-k">25. 10. · <span class="nw">A-mužstvo</span> · doma</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u15-starsi-ziaci" data-where="vonku"><a class="stone stone--l" href="../zapasy/2026-10-25-u15-osk-bosaca/">
+  <span class="stone-s"><span class="sr">Prehra, </span>7:0</span>
+  <span class="stone-o">OŠK Bošáca</span>
+  <span class="stone-k">25. 10. · <span class="nw">U15</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--m" data-team="u9-pripravka" data-where="vonku"><a class="stone stone--n" href="../zapasy/2026-10-24-u9-sk-dolne-srnie/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">ŠK Dolné Srnie</span>
+  <span class="stone-k">24. 10. · <span class="nw">U9</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--l" data-team="a-muzstvo" data-where="vonku"><a class="stone stone--l" href="../zapasy/2026-10-18-a-tj-vapec-horna-poruba/">
+  <span class="stone-s"><span class="sr">Prehra, </span>2:0</span>
+  <span class="stone-o">TJ Vápeč Horná Poruba</span>
+  <span class="stone-k">18. 10. · <span class="nw">A-mužstvo</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u11-pripravka" data-where="doma"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">OFK Čachtice</span>
+  <span class="stone-k">18. 10. · <span class="nw">U11</span> · doma</span>
+</div></li><li class="mrow mrow--st st--l" data-team="u15-starsi-ziaci" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-10-18-u15-tj-druzstevnik-hradok/">
+  <span class="stone-s"><span class="sr">Prehra, </span>1:3</span>
+  <span class="stone-o">TJ Družstevník Hrádok</span>
+  <span class="stone-k">18. 10. · <span class="nw">U15</span> · doma</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="stone stone--w" href="../zapasy/2026-10-17-u13-osk-podolie/">
+  <span class="stone-s"><span class="sr">Výhra, </span>0:1</span>
+  <span class="stone-o">OŠK Podolie</span>
+  <span class="stone-k">17. 10. · <span class="nw">U13</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--m" data-team="u9-pripravka" data-where="vonku"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">MFK Stará Turá</span>
+  <span class="stone-k">16. 10. · <span class="nw">U9</span> · vonku</span>
+</div></li><li class="mrow mrow--st st--l" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="stone stone--w" href="../zapasy/2026-10-12-u13-psk-bzince-pod-javorinou/">
+  <span class="stone-s"><span class="sr">Výhra, </span>0:11</span>
+  <span class="stone-o">PŠK Bzince pod Javorinou</span>
+  <span class="stone-k">12. 10. · <span class="nw">U13</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--l" data-team="a-muzstvo" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-10-11-a-tj-plevnik-drienove/">
+  <span class="stone-s"><span class="sr">Prehra, </span>2:4</span>
+  <span class="stone-o">TJ Plevník-Drienové</span>
+  <span class="stone-k">11. 10. · <span class="nw">A-mužstvo</span> · doma</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u15-starsi-ziaci" data-where="vonku"><a class="stone stone--d" href="../zapasy/2026-10-11-u15-tj-slovan-rovnost-krajne/">
+  <span class="stone-s"><span class="sr">Remíza, </span>2:2</span>
+  <span class="stone-o">TJ Slovan Rovnosť Krajné</span>
+  <span class="stone-k">11. 10. · <span class="nw">U15</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u11-pripravka" data-where="vonku"><a class="stone stone--n" href="../zapasy/2026-10-10-u11-osk-bosaca/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">OŠK Bošáca</span>
+  <span class="stone-k">10. 10. · <span class="nw">U11</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u9-pripravka" data-where="vonku"><a class="stone stone--n" href="../zapasy/2026-10-09-u9-osk-bosaca/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">OŠK Bošáca</span>
+  <span class="stone-k">9. 10. · <span class="nw">U9</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--m" data-team="a-muzstvo" data-where="doma"><a class="stone stone--d" href="../zapasy/2026-10-04-a-tj-start-tuchyna/">
+  <span class="stone-s"><span class="sr">Remíza, </span>2:2</span>
+  <span class="stone-o">TJ Štart Tuchyňa</span>
+  <span class="stone-k">4. 10. · <span class="nw">A-mužstvo</span> · doma</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u15-starsi-ziaci" data-where="doma"><a class="stone stone--d" href="../zapasy/2026-10-04-u15-osk-podolie/">
+  <span class="stone-s"><span class="sr">Remíza, </span>3:3</span>
+  <span class="stone-o">OŠK Podolie</span>
+  <span class="stone-k">4. 10. · <span class="nw">U15</span> · doma</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u13-mladsi-ziaci" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-10-03-u13-tj-druzstevnik-hradok/">
+  <span class="stone-s"><span class="sr">Prehra, </span>2:7</span>
+  <span class="stone-o">TJ Družstevník Hrádok</span>
+  <span class="stone-k">3. 10. · <span class="nw">U13</span> · doma</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u11-pripravka" data-where="vonku"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">MFK Vrbové B</span>
+  <span class="stone-k">3. 10. · <span class="nw">U11</span> · vonku</span>
+</div></li><li class="mrow mrow--st st--xl" data-team="u9-pripravka" data-where="doma"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">FK Bradlan Brezová pod Bradlom</span>
+  <span class="stone-k">2. 10. · <span class="nw">U9</span> · doma</span>
+</div></li><li class="mrow mrow--st st--l" data-team="u13-mladsi-ziaci" data-where="doma"><a class="stone stone--w" href="../zapasy/2026-10-01-u13-tj-spartak-horna-streda/">
+  <span class="stone-s"><span class="sr">Výhra, </span>2:1</span>
+  <span class="stone-o">TJ Spartak Horná Streda</span>
+  <span class="stone-k">1. 10. · <span class="nw">U13</span> · doma</span>
+</a></li></ol></section><section class="month" data-month><h3 class="month-h">september 2026</h3><ol class="mlist mlist--wall"><li class="mrow mrow--st st--m" data-team="a-muzstvo" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-09-27-a-tj-tatran-ladce/">
+  <span class="stone-s"><span class="sr">Prehra, </span>0:8</span>
+  <span class="stone-o">TJ Tatran Ladce</span>
+  <span class="stone-k">27. 9. · <span class="nw">A-mužstvo</span> · doma</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u15-starsi-ziaci" data-where="vonku"><a class="stone stone--l" href="../zapasy/2026-09-27-u15-fk-potvorice/">
+  <span class="stone-s"><span class="sr">Prehra, </span>4:1</span>
+  <span class="stone-o">FK Potvorice</span>
+  <span class="stone-k">27. 9. · <span class="nw">U15</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u11-pripravka" data-where="doma"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">PŠK Bzince pod Javorinou</span>
+  <span class="stone-k">27. 9. · <span class="nw">U11</span> · doma</span>
+</div></li><li class="mrow mrow--st st--xl" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="stone stone--l" href="../zapasy/2026-09-26-u13-fk-bradlan-brezova-pod-bradlom/">
+  <span class="stone-s"><span class="sr">Prehra, </span>3:1</span>
+  <span class="stone-o">FK Bradlan Brezová pod Bradlom</span>
+  <span class="stone-k">26. 9. · <span class="nw">U13</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u9-pripravka" data-where="vonku"><a class="stone stone--n" href="../zapasy/2026-09-25-u9-osk-horka-nad-vahom/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">OŠK Hôrka nad Váhom</span>
+  <span class="stone-k">25. 9. · <span class="nw">U9</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u15-starsi-ziaci" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-09-22-u15-tj-iskra-moravske-lieskove/">
+  <span class="stone-s"><span class="sr">Prehra, </span>2:6</span>
+  <span class="stone-o">TJ Iskra Moravské Lieskové</span>
+  <span class="stone-k">22. 9. · <span class="nw">U15</span> · doma</span>
+</a></li><li class="mrow mrow--st st--s" data-team="a-muzstvo" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-09-20-a-osk-podolie/">
+  <span class="stone-s"><span class="sr">Prehra, </span>3:4</span>
+  <span class="stone-o">OŠK Podolie</span>
+  <span class="stone-k">20. 9. · <span class="nw">A-mužstvo</span> · doma</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u11-pripravka" data-where="vonku"><a class="stone stone--n" href="../zapasy/2026-09-19-u11-tj-druzstevnik-hradok/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">TJ Družstevník Hrádok</span>
+  <span class="stone-k">19. 9. · <span class="nw">U11</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u9-pripravka" data-where="doma"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">TJ Spartak Horná Streda</span>
+  <span class="stone-k">18. 9. · <span class="nw">U9</span> · doma</span>
+</div></li><li class="mrow mrow--st st--m" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="stone stone--w" href="../zapasy/2026-09-17-u13-tj-zavazan-kalnica/">
+  <span class="stone-s"><span class="sr">Výhra, </span>1:3</span>
+  <span class="stone-o">TJ Zavažan Kálnica</span>
+  <span class="stone-k">17. 9. · <span class="nw">U13</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u15-starsi-ziaci" data-where="doma"><a class="stone stone--w" href="../zapasy/2026-09-15-u15-tj-slovan-rovnost-krajne/">
+  <span class="stone-s"><span class="sr">Výhra, </span>8:0</span>
+  <span class="stone-o">TJ Slovan Rovnosť Krajné</span>
+  <span class="stone-k">15. 9. · <span class="nw">U15</span> · doma</span>
+</a></li><li class="mrow mrow--st st--m" data-team="u11-pripravka" data-where="vonku"><a class="stone stone--n" href="../zapasy/2026-09-15-u11-mfk-stara-tura/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">MFK Stará Turá</span>
+  <span class="stone-k">15. 9. · <span class="nw">U11</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--xl" data-team="a-muzstvo" data-where="vonku"><a class="stone stone--l" href="../zapasy/2026-09-13-a-tj-slovan-kosecke-podhradie/">
+  <span class="stone-s"><span class="sr">Prehra, </span>7:1</span>
+  <span class="stone-o">TJ Slovan Košecké Podhradie</span>
+  <span class="stone-k">13. 9. · <span class="nw">A-mužstvo</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u15-starsi-ziaci" data-where="vonku"><a class="stone stone--l" href="../zapasy/2026-09-13-u15-ofk-cachtice/">
+  <span class="stone-s"><span class="sr">Prehra, </span>8:2</span>
+  <span class="stone-o">OFK Čachtice</span>
+  <span class="stone-k">13. 9. · <span class="nw">U15</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u11-pripravka" data-where="doma"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">OŠK Hôrka nad Váhom</span>
+  <span class="stone-k">13. 9. · <span class="nw">U11</span> · doma</span>
+</div></li><li class="mrow mrow--st st--l" data-team="u9-pripravka" data-where="vonku"><a class="stone stone--n" href="../zapasy/2026-09-11-u9-tj-jednota-brestovec/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">TJ Jednota Brestovec</span>
+  <span class="stone-k">11. 9. · <span class="nw">U9</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--s" data-team="a-muzstvo" data-where="doma"><a class="stone stone--w" href="../zapasy/2026-09-06-a-fk-klucove/">
+  <span class="stone-s"><span class="sr">Výhra, </span>4:2</span>
+  <span class="stone-o">FK Kľúčové</span>
+  <span class="stone-k">6. 9. · <span class="nw">A-mužstvo</span> · doma</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u13-mladsi-ziaci" data-where="doma"><a class="stone stone--w" href="../zapasy/2026-09-06-u13-ofk-cachtice/">
+  <span class="stone-s"><span class="sr">Výhra, </span>9:4</span>
+  <span class="stone-o">OFK Čachtice</span>
+  <span class="stone-k">6. 9. · <span class="nw">U13</span> · doma</span>
+</a></li><li class="mrow mrow--st st--xl" data-team="u11-pripravka" data-where="vonku"><a class="stone stone--n" href="../zapasy/2026-09-05-u11-fk-bradlan-brezova-pod-bradlom/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">FK Bradlan Brezová pod Bradlom</span>
+  <span class="stone-k">5. 9. · <span class="nw">U11</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--m" data-team="u9-pripravka" data-where="doma"><a class="stone stone--n" href="../zapasy/2026-09-04-u9-sk-dolne-srnie/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">ŠK Dolné Srnie</span>
+  <span class="stone-k">4. 9. · <span class="nw">U9</span> · doma</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u13-mladsi-ziaci" data-where="doma"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">OŠK Podolie</span>
+  <span class="stone-k">3. 9. · <span class="nw">U13</span> · doma</span>
+</div></li><li class="mrow mrow--st st--l" data-team="u15-starsi-ziaci" data-where="vonku"><a class="stone stone--l" href="../zapasy/2026-09-02-u15-tj-druzstevnik-hradok/">
+  <span class="stone-s"><span class="sr">Prehra, </span>5:2</span>
+  <span class="stone-o">TJ Družstevník Hrádok</span>
+  <span class="stone-k">2. 9. · <span class="nw">U15</span> · vonku</span>
+</a></li></ol></section><section class="month" data-month><h3 class="month-h">august 2026</h3><ol class="mlist mlist--wall"><li class="mrow mrow--st st--xl" data-team="a-muzstvo" data-where="vonku"><a class="stone stone--l" href="../zapasy/2026-08-30-a-tj-spartak-lysa-pod-makytou/">
+  <span class="stone-s"><span class="sr">Prehra, </span>3:2</span>
+  <span class="stone-o">TJ Spartak Lysá pod Makytou</span>
+  <span class="stone-k">30. 8. · <span class="nw">A-mužstvo</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--s" data-team="u15-starsi-ziaci" data-where="vonku"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">OFK Vrbovce</span>
+  <span class="stone-k">30. 8. · <span class="nw">U15</span> · vonku</span>
+</div></li><li class="mrow mrow--st st--xl" data-team="u11-pripravka" data-where="doma"><a class="stone stone--n" href="../zapasy/2026-08-30-u11-tj-druzstevnik-lubina-kopanice/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">TJ Družstevník Lubina – kopanice</span>
+  <span class="stone-k">30. 8. · <span class="nw">U11</span> · doma</span>
+</a></li><li class="mrow mrow--st st--m" data-team="u9-pripravka" data-where="doma"><a class="stone stone--n" href="../zapasy/2026-08-28-u9-mfk-stara-tura/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">MFK Stará Turá</span>
+  <span class="stone-k">28. 8. · <span class="nw">U9</span> · doma</span>
+</a></li><li class="mrow mrow--st st--s" data-team="a-muzstvo" data-where="doma"><div class="stone stone--n">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">FK Košeca</span>
+  <span class="stone-k">23. 8. · <span class="nw">A-mužstvo</span> · doma</span>
+</div></li><li class="mrow mrow--st st--s" data-team="u15-starsi-ziaci" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-08-23-u15-osk-bosaca/">
+  <span class="stone-s"><span class="sr">Prehra, </span>2:5</span>
+  <span class="stone-o">OŠK Bošáca</span>
+  <span class="stone-k">23. 8. · <span class="nw">U15</span> · doma</span>
+</a></li><li class="mrow mrow--st st--l" data-team="u11-pripravka" data-where="vonku"><a class="stone stone--n" href="../zapasy/2026-08-22-u11-tj-spartak-horna-streda/">
+  <span class="stone-s"><span aria-hidden="true">–</span><span class="sr">bez výsledku</span></span>
+  <span class="stone-o">TJ Spartak Horná Streda</span>
+  <span class="stone-k">22. 8. · <span class="nw">U11</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--s" data-team="a-muzstvo" data-where="vonku"><a class="stone stone--l" href="../zapasy/2026-08-16-a-fks-nemsova/">
+  <span class="stone-s"><span class="sr">Prehra, </span>2:0</span>
+  <span class="stone-o">FKS Nemšová</span>
+  <span class="stone-k">16. 8. · <span class="nw">A-mužstvo</span> · vonku</span>
+</a></li><li class="mrow mrow--st st--l" data-team="a-muzstvo" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-08-09-a-fk-melcice-lieskove/">
+  <span class="stone-s"><span class="sr">Prehra, </span>3:4</span>
+  <span class="stone-o">FK Melčice-Lieskové</span>
+  <span class="stone-k">9. 8. · <span class="nw">A-mužstvo</span> · doma</span>
+</a></li><li class="mrow mrow--st st--l" data-team="a-muzstvo" data-where="doma"><a class="stone stone--l" href="../zapasy/2026-08-01-a-afc-nove-mesto-nad-vahom/">
+  <span class="stone-s"><span class="sr">Prehra, </span>1:7</span>
+  <span class="stone-o">AFC Nové Mesto nad Váhom</span>
+  <span class="stone-k">1. 8. · <span class="nw">A-mužstvo</span> · doma</span>
+</a></li></ol></section><p class="empty" data-empty hidden>Pre tento výber zatiaľ nie je žiadny výsledok.</p></section>
+  </div>
+  <div class="cal-row"><details class="cal" data-cal id="cal-vsetky">
+  <summary class="btn btn--line"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>Zápasy do kalendára</span></summary>
+  <div class="cal-pop">
+    <a class="cal-o" data-webcal href="../kalendar/vsetky.ics" hidden><b>Odoberať v telefóne</b><span>iPhone, Mac, Outlook – rozpis sa sám aktualizuje</span></a>
+    <a class="cal-o" data-gcal href="../kalendar/vsetky.ics" rel="noopener" hidden><b>Pridať do Google Kalendára</b><span>aj pre Android</span></a>
+    <a class="cal-o" data-ics href="../kalendar/vsetky.ics" download><b>Stiahnuť súbor .ics</b><span>jednorazovo, bez aktualizácií</span></a>
+  </div>
+</details></div>
+</div></section>
+</main>
+<footer class="ftr">
+  <div class="ftr-wall" aria-hidden="true"></div>
+  <div class="wrap ftr-grid">
+    <div class="ftr-club">
+      <img src="../img/erb-128.webp" alt="" width="64" height="64" loading="lazy">
+      <p class="ftr-name">OŠK Slovan Beckov</p>
+      <p class="ftr-motto">Futbal pod Beckovským hradom.</p>
+    </div>
+    <div><h2 class="ftr-h">Ihrisko</h2><p>Futbalové ihrisko OŠK Slovan Beckov<br>916 38 Beckov</p><p><a href="https://www.google.com/maps/search/?api=1&query=48.7895417,17.8886728" rel="noopener">Navigovať na ihrisko</a></p><p>Najbližšie doma: <a href="../zapasy/2027-03-28-a-fks-nemsova/">28. 3. o 15:00 proti FKS Nemšová</a></p></div>
+    <div><h2 class="ftr-h">Kontakt</h2><p>Obecný športový klub Slovan Beckov<br><a href="mailto:david.kacerek@centrum.sk">david.kacerek<wbr>@centrum.sk</a></p><p><a href="https://www.facebook.com/OSKSlovanBeckov/" rel="noopener">Facebook klubu</a></p></div>
+    <div><h2 class="ftr-h">Zdroje</h2><p>Výsledky zo Sportnetu (Futbalnet), aktualizované 17. 11. 2026. Správy z klubu podľa Beckovských novín, obec podľa webu obce.</p><p><a href="https://sportnet.sme.sk/futbalnet/k/osk-slovan-beckov/" rel="noopener">Klub na Sportnete</a></p></div>
+  </div>
+  <div class="ftr-bar"><div class="wrap ftr-bar-in"><span>© 2026 Obecný športový klub Slovan Beckov</span><a href="../ochrana-sukromia/">Ochrana súkromia</a><a href="../admin/">Administrácia (ukážka)</a></div></div>
+</footer>
+</body>
+</html>

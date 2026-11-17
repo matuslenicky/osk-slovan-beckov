@@ -1,0 +1,256 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OŠK Slovan Beckov//Zapasy//SK
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:OŠK Slovan Beckov – A-mužstvo
+X-WR-TIMEZONE:Europe/Bratislava
+BEGIN:VTIMEZONE
+TZID:Europe/Bratislava
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:zapas-6a4184b2e5a4847e622563aa@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20260801T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – AFC Nové Mesto nad Váhom 1:7
+DESCRIPTION:Slovnaft Cup\, 1. kolo\nDomáci zápas
+LOCATION:OŠK Slovan Beckov
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e44d14e91f303297046@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20260809T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – FK Melčice-Lieskové 3:4
+DESCRIPTION:VI. liga Sever\, 1. kolo\nDomáci zápas
+LOCATION:OŠK Slovan Beckov
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e44d14e91f303296eb5@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20260816T140000
+DURATION:PT2H
+SUMMARY:A-mužstvo: FKS Nemšová – OŠK Slovan Beckov 2:0
+DESCRIPTION:VI. liga Sever\, 2. kolo\nZápas vonku
+LOCATION:FK Slovan Nemšová
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e45d14e91f303297482@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20260823T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – FK Košeca
+DESCRIPTION:VI. liga Sever\, 3. kolo\nDomáci zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e44d14e91f303296ff2@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20260830T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: TJ Spartak Lysá pod Makytou – OŠK Slovan Beckov 3:
+ 2
+DESCRIPTION:VI. liga Sever\, 4. kolo\nZápas vonku
+LOCATION:Štadión TJ Spartak Lysá pod Makytou
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e45d14e91f3032972e3@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20260906T160000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – FK Kľúčové 4:2
+DESCRIPTION:VI. liga Sever\, 5. kolo\nDomáci zápas
+LOCATION:OŠK Slovan Beckov
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e44d14e91f30329707c@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20260913T160000
+DURATION:PT2H
+SUMMARY:A-mužstvo: TJ Slovan Košecké Podhradie – OŠK Slovan Beckov 7
+ :1
+DESCRIPTION:VI. liga Sever\, 6. kolo\nZápas vonku
+LOCATION:TJ Slovan Košecké Podhradie
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e45d14e91f3032973db@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20260920T153000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – OŠK Podolie 3:4
+DESCRIPTION:VI. liga Sever\, 7. kolo\nDomáci zápas
+LOCATION:OŠK Slovan Beckov
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e45d14e91f3032973c7@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20260927T153000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – TJ Tatran Ladce 0:8
+DESCRIPTION:VI. liga Sever\, 8. kolo\nDomáci zápas
+LOCATION:OŠK Slovan Beckov
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e45d14e91f30329739a@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20261004T150000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – TJ Štart Tuchyňa 2:2
+DESCRIPTION:VI. liga Sever\, 9. kolo\nDomáci zápas
+LOCATION:OŠK Slovan Beckov
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e45d14e91f303297526@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20261011T150000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – TJ Plevník-Drienové 2:4
+DESCRIPTION:VI. liga Sever\, 10. kolo\nDomáci zápas
+LOCATION:OŠK Slovan Beckov
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e45d14e91f303297672@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20261018T140000
+DURATION:PT2H
+SUMMARY:A-mužstvo: TJ Vápeč Horná Poruba – OŠK Slovan Beckov 2:0
+DESCRIPTION:VI. liga Sever\, 11. kolo\nZápas vonku
+LOCATION:Horná Poruba
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e46d14e91f303297a23@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20261025T140000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – FK Nová Dubnica 0:5
+DESCRIPTION:VI. liga Sever\, 12. kolo\nDomáci zápas
+LOCATION:OŠK Slovan Beckov
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e46d14e91f30329779a@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20261101T140000
+DURATION:PT2H
+SUMMARY:A-mužstvo: TJ Považan Pruské – OŠK Slovan Beckov 0:4
+DESCRIPTION:VI. liga Sever\, 13. kolo\nZápas vonku
+LOCATION:Futbalový štadión TJ Považan Pruské
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e47d14e91f303297bb1@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270321T150000
+DURATION:PT2H
+SUMMARY:A-mužstvo: FK Melčice-Lieskové – OŠK Slovan Beckov
+DESCRIPTION:VI. liga Sever\, 14. kolo\nZápas vonku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e46d14e91f303297969@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270328T150000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – FKS Nemšová
+DESCRIPTION:VI. liga Sever\, 15. kolo\nDomáci zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e47d14e91f303297cb6@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270404T160000
+DURATION:PT2H
+SUMMARY:A-mužstvo: FK Košeca – OŠK Slovan Beckov
+DESCRIPTION:VI. liga Sever\, 16. kolo\nZápas vonku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e47d14e91f303297f93@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270411T160000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – TJ Spartak Lysá pod Makytou
+DESCRIPTION:VI. liga Sever\, 17. kolo\nDomáci zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e47d14e91f303297d6c@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270418T163000
+DURATION:PT2H
+SUMMARY:A-mužstvo: FK Kľúčové – OŠK Slovan Beckov
+DESCRIPTION:VI. liga Sever\, 18. kolo\nZápas vonku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e48d14e91f3032980ad@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270425T163000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – TJ Slovan Košecké Podhradie
+DESCRIPTION:VI. liga Sever\, 19. kolo\nDomáci zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e47d14e91f303297d73@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270502T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Podolie – OŠK Slovan Beckov
+DESCRIPTION:VI. liga Sever\, 20. kolo\nZápas vonku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e48d14e91f3032981a3@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270509T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: TJ Tatran Ladce – OŠK Slovan Beckov
+DESCRIPTION:VI. liga Sever\, 21. kolo\nZápas vonku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e48d14e91f303298319@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270516T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: TJ Štart Tuchyňa – OŠK Slovan Beckov
+DESCRIPTION:VI. liga Sever\, 22. kolo\nZápas vonku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e49d14e91f3032986f4@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270523T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: TJ Plevník-Drienové – OŠK Slovan Beckov
+DESCRIPTION:VI. liga Sever\, 23. kolo\nZápas vonku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e48d14e91f303298531@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270530T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – TJ Vápeč Horná Poruba
+DESCRIPTION:VI. liga Sever\, 24. kolo\nDomáci zápas
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e49d14e91f303298623@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270606T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: FK Nová Dubnica – OŠK Slovan Beckov
+DESCRIPTION:VI. liga Sever\, 25. kolo\nZápas vonku
+END:VEVENT
+BEGIN:VEVENT
+UID:zapas-6a4f3e49d14e91f303298719@osk-slovan-beckov.sportnet
+DTSTAMP:20261117T182210Z
+DTSTART;TZID=Europe/Bratislava:20270613T170000
+DURATION:PT2H
+SUMMARY:A-mužstvo: OŠK Slovan Beckov – TJ Považan Pruské
+DESCRIPTION:VI. liga Sever\, 26. kolo\nDomáci zápas
+END:VEVENT
+END:VCALENDAR
