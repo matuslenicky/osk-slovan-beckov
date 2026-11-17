@@ -24,10 +24,10 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:zapas-6a6baac4e904c78a51705960@osk-slovan-beckov.sportnet
-DTSTAMP:20261117T182210Z
+DTSTAMP:20261117T185011Z
 DTSTART;TZID=Europe/Bratislava:20270424T103000
 DURATION:PT2H
-SUMMARY:U11: TJ Družstevník Lubina - kopanice – OŠK Slovan Beckov U11
+SUMMARY:U11: TJ Družstevník Lubina-Kopanice – OŠK Slovan Beckov U11
 DESCRIPTION:III. liga prípraviek U11\, 15. kolo\nZápas vonku
 END:VEVENT
 END:VCALENDAR
