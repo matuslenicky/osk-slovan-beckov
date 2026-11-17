@@ -2,7 +2,7 @@
  "source": "Sportnet / Futbalnet",
  "appSpace": "osk-slovan-beckov.futbalnet.sk",
  "season": "2026/2027",
- "updated": "2026-11-17T18:08:06.519Z",
+ "updated": "2026-11-17T18:22:09.599Z",
  "teams": [
   {
    "slug": "a-muzstvo",
@@ -849,7 +849,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/1/zapas/929339",
    "half": "0:6",
    "referee": "Ľubomír Veselák",
-   "audience": 250,
    "lineups": {
     "our": {
      "start": [
@@ -1166,6 +1165,7 @@
      }
     ]
    },
+   "audience": 250,
    "detail": true
   },
   {
@@ -1237,7 +1237,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954301",
    "half": "0:1",
    "referee": "Pavol Pastorek",
-   "audience": 150,
    "lineups": {
     "our": {
      "start": [
@@ -1569,6 +1568,7 @@
      }
     ]
    },
+   "audience": 150,
    "detail": true
   },
   {
@@ -1634,7 +1634,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954307",
    "half": "2:0",
    "referee": "Tomáš Pollák",
-   "audience": 150,
    "lineups": {
     "our": {
      "start": [
@@ -1965,6 +1964,7 @@
      }
     ]
    },
+   "audience": 150,
    "detail": true
   },
   {
@@ -2209,7 +2209,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954322",
    "half": "2:1",
    "referee": "Ahmed Yousry Helal Ahmed",
-   "audience": 150,
    "lineups": {
     "our": {
      "start": [
@@ -2469,6 +2468,7 @@
      }
     ]
    },
+   "audience": 150,
    "detail": true
   },
   {
@@ -2804,7 +2804,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954327",
    "half": "2:1",
    "referee": "Gabriel Knap",
-   "audience": 100,
    "lineups": {
     "our": {
      "start": [
@@ -3137,6 +3136,7 @@
      }
     ]
    },
+   "audience": 100,
    "detail": true
   },
   {
@@ -3330,7 +3330,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954337",
    "half": "7:0",
    "referee": "Martin Brezina",
-   "audience": 120,
    "lineups": {
     "our": {
      "start": [
@@ -3583,6 +3582,7 @@
      }
     ]
    },
+   "audience": 120,
    "detail": true
   },
   {
@@ -3858,7 +3858,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954340",
    "half": "0:1",
    "referee": "Pavol Pastorek",
-   "audience": 150,
    "lineups": {
     "our": {
      "start": [
@@ -4111,6 +4110,7 @@
      }
     ]
    },
+   "audience": 150,
    "detail": true
   },
   {
@@ -4392,7 +4392,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954352",
    "half": "0:4",
    "referee": "Peter Kollár",
-   "audience": 100,
    "lineups": {
     "our": {
      "start": [
@@ -4671,6 +4670,7 @@
      }
     ]
    },
+   "audience": 100,
    "detail": true
   },
   {
@@ -4973,7 +4973,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954353",
    "half": "2:1",
    "referee": "Blažej Hrabaj",
-   "audience": 100,
    "lineups": {
     "our": {
      "start": [
@@ -5279,6 +5278,7 @@
      }
     ]
    },
+   "audience": 100,
    "detail": true
   },
   {
@@ -5453,7 +5453,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954366",
    "half": "1:1",
    "referee": "Viktor Tomka",
-   "audience": 120,
    "lineups": {
     "our": {
      "start": [
@@ -5765,6 +5764,7 @@
      }
     ]
    },
+   "audience": 120,
    "detail": true
   },
   {
@@ -6007,7 +6007,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954368",
    "half": "1:0",
    "referee": "Martin Brna",
-   "audience": 100,
    "lineups": {
     "our": {
      "start": [
@@ -6293,6 +6292,7 @@
      }
     ]
    },
+   "audience": 100,
    "detail": true
   },
   {
@@ -6439,7 +6439,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954379",
    "half": "0:4",
    "referee": "Erik Barát",
-   "audience": 150,
    "lineups": {
     "our": {
      "start": [
@@ -6719,6 +6718,7 @@
      }
     ]
    },
+   "audience": 150,
    "detail": true
   },
   {
@@ -6892,7 +6892,6 @@
    "url": "https://sportnet.sme.sk/futbalnet/z/5/zapas/954383",
    "half": "0:2",
    "referee": "Lukáš Jablonický",
-   "audience": 100,
    "lineups": {
     "our": {
      "start": [
@@ -7170,6 +7169,7 @@
      }
     ]
    },
+   "audience": 100,
    "detail": true
   },
   {

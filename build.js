@@ -62,7 +62,10 @@ const teams = sn.teams.map((t) => {
   const league = t.competitions.find((c) => !c.cup);
   // tabuľka prípraviek bez zapísaných výsledkov (všetci 0:0, body len za účasť) by klamala, preto sa neukazuje
   const raw = league ? sn.tables[league.key] : null;
-  const table = raw && raw.rows.some((r) => r.gf || r.ga) ? raw : null;
+  // ak náš klub výsledky prípravky nezapisuje (len 0:0), poradie by ho stavalo na chvost, preto tiež bez tabuľky
+  const ourRaw = raw?.rows.find((r) => r.our);
+  const prepNoScore = /^U(\d|1[01])\b/.test(t.short) && ourRaw && !ourRaw.gf && !ourRaw.ga;
+  const table = raw && raw.rows.some((r) => r.gf || r.ga) && !prepNoScore ? raw : null;
   const pos = table?.rows.find((r) => r.our);
   return {
     ...t, url: `timy/${t.slug}/`, code: t.adult ? t.slug[0] : norm(t.short).replace(/-/g, ''),
@@ -280,7 +283,7 @@ const pageHead = ({ title, sub = '', crumbs = [], R, aside = '' }) => `<section 
 </div></section>`;
 const secHead = (h, id, moreLink = '', eyebrow = '') => `<div class="sec-head"><div>${eyebrow ? `<p class="eyebrow">${eyebrow}</p>` : ''}<h2 class="h2" id="${id}">${h}</h2></div>${moreLink}</div>`;
 const more = (href, t) => `<a class="more" href="${href}">${t}${I.arrow}</a>`;
-const venueName = (v) => v.replace(/\s+/g, ' ').trim();
+const venueName = (v) => v.replace(/\s+/g, ' ').trim().replace(/(^|\s)č\.\s*(\d)/g, '$1č. $2'); // „Ihrisko č.1“ zo Sportnetu -> „č. 1“
 
 // zápasová karta ako výrez vlajky: biela a modrá polovica (domáci vľavo na bielej, hostia vpravo na modrej)
 function card(m, R, { big = false, label = '', self = false } = {}) {
@@ -424,7 +427,7 @@ add('', {
   <div class="hero-copy">
     <p class="eyebrow">Obecný športový klub · ročník ${SEASON}</p>
     <h1 class="hero-h" id="hero-h"><span>OŠK</span> <span class="hero-y">Slovan</span> <span>Beckov</span></h1>
-    <p class="hero-p">Futbal pod Beckovským hradom. Za desať ročníkov prešlo áčko z 8. ligy až do krajskej VI. ligy Sever${A.pos ? `, kde je ${winterNow ? 'po jeseni ' : ''}na ${A.pos}. mieste ${zo(A.of)}` : ''}. V mládeži hrá ${plural(youth.length, 'tím', 'tímy', 'tímov')} od prípravky U9 po žiakov U15.</p>
+    <p class="hero-p">Futbal pod Beckovským hradom. Za desať ročníkov prešlo áčko z 8. ligy až do krajskej VI. ligy Sever${A.pos ? `, kde je ${winterNow ? 'po jeseni ' : ''}na ${A.pos}. mieste ${zo(A.of)}` : ''}. V mládeži ${youth.length >= 2 && youth.length <= 4 ? 'hrajú' : 'hrá'} ${plural(youth.length, 'tím', 'tímy', 'tímov')} od prípravky U9 po žiakov U15.</p>
     <p class="hero-cta"><a class="btn btn--yellow" href="${R}zapasy/">Program a výsledky</a><a class="btn btn--line" href="${R}klub/">Cesta na hradby</a></p>
   </div>
   <figure class="hero-flag">${vlajka()}<figcaption>Hrad na brale ako na klubovej vlajke</figcaption></figure>
@@ -570,7 +573,7 @@ add('tabulky/', {
     <p class="tsec-l">${esc(t.leagueName)}</p>
     ${tableHtml(t.table, R)}
   </section>`).join('')}
-  ${teams.some((t) => !t.table) ? `<p class="note">${teams.filter((t) => !t.table).map((t) => esc(t.short)).join(', ')}: prípravka hrá bez tabuľky.</p>` : ''}
+  ${teams.some((t) => !t.table) ? `<p class="note">${teams.filter((t) => !t.table).map((t) => esc(t.short)).join(', ')}: ${teams.filter((t) => !t.table).length > 1 ? 'prípravky hrajú' : 'prípravka hrá'} bez tabuľky.</p>` : ''}
 </div></section>`,
 });
 
@@ -702,7 +705,7 @@ add('ihrisko/', {
     <h2 class="h3">Areál pri hrádzi</h2>
     <ul class="mini mini--light">${ST.fakty.map((u) => `<li><b>${esc(u.k)}</b> ${esc(u.t)}</li>`).join('')}</ul>
     <p class="btns"><a class="btn btn--blue" href="${mapsUrl}" rel="noopener">${I.route}Navigovať (Google Mapy)</a><a class="btn btn--line" href="${mapyUrl}" rel="noopener">${I.pin}Mapy.com</a></p>
-    <p class="src">Zdroj: Beckovské noviny 3/2025, 2/2025 a 5/2026, poloha zo Sportnetu.</p>
+    <p class="src">Zdroj: Beckovské noviny 2/2025, 3/2025, 4/2026 a 5/2026, poloha zo Sportnetu.</p>
   </div>
   <div>${home.length ? `<h2 class="h3">Najbližšie zápasy doma</h2>${matchList(home, R)}` : ''}</div>
 </div></section>`;

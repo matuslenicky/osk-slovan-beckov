@@ -16,7 +16,7 @@
   "noviny": "https://www.obec-beckov.sk/sk/organizacie-a-institucie/60-beckovske-noviny",
   "_noviny": "Beckovské noviny, noviny obce od roku 1996 (šesť čísel ročne)",
   "stadion": {
-    "_zdroj": "Sportnet (názov, poloha); Beckovské noviny 3/2025, 4/2026 a 5/2026",
+    "_zdroj": "Sportnet (názov, poloha); Beckovské noviny 2/2025, 3/2025, 4/2026 a 5/2026",
     "nazov": "Futbalové ihrisko OŠK Slovan Beckov",
     "geo": [48.7895417, 17.8886728],
     "fakty": [
@@ -57,7 +57,7 @@
   "jasin": {
     "_zdroj": "Beckovské noviny 4/2025 (pobyt overený v piešťanskej kúpeľnej knihe, august 1971)",
     "nadpis": "Brankár storočia na obede v Beckove",
-    "text": "V auguste 1971 sa v Beckove zastavil Lev Jašin, legendárny brankár Dynama Moskva a držiteľ Zlatej lopty z roku 1963. S manželkou boli v Piešťanoch na kúpeľoch a v Beckove sa zastavili v hoteli na obed. Mladý fanúšik ho spoznal, fotografia sa nezachovala."
+    "text": "V auguste 1971 sa v Beckove zastavil Lev Jašin, legendárny brankár Dynama Moskva a držiteľ Zlatej lopty z roku 1963. S manželkou boli na kúpeľnom pobyte v Piešťanoch a v Beckove sa zastavili v hoteli na obed. Mladý fanúšik ho spoznal, fotografia sa nezachovala."
   },
   "historia": [
     { "rok": "1971", "text": "V Beckove sa na obed zastavil Lev Jašin, ktorého v roku 2000 vyhlásili za najlepšieho brankára storočia.", "zdroj": "Beckovské noviny 4/2025" },
@@ -100,6 +100,7 @@
     "Futbalový klub Nová Dubnica": "FK Nová Dubnica",
     "Futbalový klub Potvorice": "FK Potvorice",
     "TJ Tatran Cementáreň Ladce": "TJ Tatran Ladce",
-    "TJ Plevník - Drienové": "TJ Plevník-Drienové"
+    "TJ Plevník - Drienové": "TJ Plevník-Drienové",
+    "TJ Družstevník Lubina - kopanice": "TJ Družstevník Lubina-Kopanice"
   }
 }
