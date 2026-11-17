@@ -5,343 +5,101 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'sha256-mvnHwz+lJQZdVAYqqUA1AagJMWjuGlUGzmpSslu4MpQ='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; manifest-src 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Návrh webu – OŠK Slovan Beckov – futbal pod Beckovským hradom</title>
-<meta name="description" content="OŠK Slovan Beckov – futbal pod Beckovským hradom. Zápasy, výsledky, tabuľky a súpisky áčka (VI. liga Sever) a mládeže od prípravky U9 po žiakov U15, cesta áčka z 8. ligy do VI. ligy a tri tituly.">
+<title>Návrh webu – OŠK Slovan Beckov – futbal pod hradom</title>
+<meta name="description" content="OŠK Slovan Beckov – zápasy, výsledky, tabuľky a súpisky áčka (VI. liga Sever) a mládeže. Za desať ročníkov z 8. ligy do krajskej VI. ligy, tri tituly.">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Návrh webu – OŠK Slovan Beckov – futbal pod Beckovským hradom">
+<meta property="og:title" content="Návrh webu – OŠK Slovan Beckov – futbal pod hradom">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="sk_SK">
 <meta name="theme-color" content="#1d3480">
 <link rel="icon" type="image/png" href="./img/favicon.png">
 <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
-<link rel="preload" href="./fonts/rubik-800.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="./fonts/rubik-700.woff" as="font" type="font/woff" crossorigin>
-<link rel="preload" href="./fonts/lora-400.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="./fonts/libre-caslon-display-400.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="./fonts/libre-caslon-text-400.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="./fonts/libre-caslon-text-700.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="./css/site.css">
 <script>var d=document.documentElement;d.classList.add('js');if(/[?&](tim|kde)=/.test(location.search)){d.classList.add('flt');addEventListener('load',function(){d.classList.remove('flt')})}</script>
 <script type="module" src="./js/site.mjs"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsClub","name":"OŠK Slovan Beckov","legalName":"Obecný športový klub Slovan Beckov","sport":"Futbal","email":"david.kacerek@centrum.sk","address":{"@type":"PostalAddress","streetAddress":"Beckov","postalCode":"916 38","addressLocality":"Beckov","addressCountry":"SK"},"location":{"@type":"StadiumOrArena","name":"Futbalové ihrisko OŠK Slovan Beckov","geo":{"@type":"GeoCoordinates","latitude":48.7895417,"longitude":17.8886728}},"sameAs":["https://sportnet.sme.sk/futbalnet/k/osk-slovan-beckov/","https://www.facebook.com/OSKSlovanBeckov/"]}</script></head>
-<body class="home">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsClub","name":"OŠK Slovan Beckov","sport":"Futbal","email":"david.kacerek@centrum.sk","address":{"@type":"PostalAddress","streetAddress":"Beckov","postalCode":"916 38","addressLocality":"Beckov","addressCountry":"SK"},"location":{"@type":"StadiumOrArena","name":"Futbalové ihrisko OŠK Slovan Beckov","geo":{"@type":"GeoCoordinates","latitude":48.7895417,"longitude":17.8886728}},"sameAs":["https://sportnet.sme.sk/futbalnet/k/osk-slovan-beckov/","https://www.facebook.com/OSKSlovanBeckov/"]}</script></head>
+<body class="v2 home">
 <a class="skip" href="#obsah">Preskočiť na obsah</a>
 <p class="demo">Návrh webu · nie je to oficiálna stránka klubu</p>
-<header class="hdr">
-  <div class="wrap hdr-in">
-    <a class="brand" href="./" aria-current="page"><img src="./img/erb-128.webp" alt="" width="46" height="46"><span class="brand-t"><span class="brand-n">OŠK Slovan Beckov</span><span class="brand-s">futbal pod hradom</span></span><span class="sr">, úvod</span></a>
-    <nav class="nav" aria-label="Hlavné menu"><ul><li><a href="./zapasy/">Zápasy</a></li><li><a href="./tabulky/">Tabuľky</a></li><li><a href="./timy/">Tímy</a></li><li><a href="./mladez/">Mládež</a></li><li><a href="./klub/">Klub a hradby</a></li><li><a href="./ihrisko/">Ihrisko</a></li><li><a href="./kontakt/">Kontakt</a></li></ul></nav>
-    <button class="menu-btn" type="button" aria-haspopup="dialog" aria-controls="menu"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button>
-  </div>
-</header>
-<dialog class="menu" id="menu" aria-label="Menu">
-  <div class="bridge">
-    <div class="bridge-top"><span class="bridge-k">Padací most</span><button class="menu-x" type="button" data-close><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Zavrieť</span></button></div>
-    <nav aria-label="Menu na telefóne"><ul class="bridge-nav"><li><a href="./" aria-current="page">Úvod</a></li><li><a href="./zapasy/">Zápasy</a></li><li><a href="./tabulky/">Tabuľky</a></li><li><a href="./timy/">Tímy</a></li><li><a href="./mladez/">Mládež</a></li><li><a href="./klub/">Klub a hradby</a></li><li><a href="./ihrisko/">Ihrisko</a></li><li><a href="./kontakt/">Kontakt</a></li></ul></nav>
-  </div>
-</dialog>
-<main id="obsah">
-<section class="hero" aria-labelledby="hero-h"><div class="wrap hero-in">
-  <div class="hero-copy">
-    <p class="eyebrow">Obecný športový klub · ročník 2026/27</p>
-    <h1 class="hero-h" id="hero-h"><span>OŠK</span> <span class="hero-y">Slovan</span> <span>Beckov</span></h1>
-    <p class="hero-p">Futbal pod Beckovským hradom. Za desať ročníkov prešlo áčko z 8. ligy až do krajskej VI. ligy Sever, kde je po jeseni na 12. mieste zo 14. V mládeži hrajú 4 tímy od prípravky U9 po žiakov U15.</p>
-    <p class="hero-cta"><a class="btn btn--yellow" href="./zapasy/">Program a výsledky</a><a class="btn btn--line" href="./klub/">Cesta na hradby</a></p>
-  </div>
-  <figure class="hero-flag"><svg class="flag" viewBox="0 0 600 340" aria-hidden="true" focusable="false">
-  <defs><clipPath id="fl-l"><rect width="300" height="340"/></clipPath><clipPath id="fl-r"><rect x="300" width="300" height="340"/></clipPath>
-  <clipPath id="fl-shape"><path d="M0 0H600V300C600 322 520 340 300 340S0 322 0 300Z"/></clipPath></defs>
-  <g clip-path="url(#fl-shape)">
-    <rect class="fl-w" width="300" height="340"/><rect class="fl-b" x="300" width="300" height="340"/>
-    <path class="fl-hb" d="M0 300V262C30 256 52 240 80 236C104 232 118 214 134 200C150 186 160 178 176 176L200 172L214 158L236 156L250 150H420L436 160L460 162C480 170 492 186 510 196C532 208 556 214 580 228L600 236V300ZM262 150V72h6v-8h6v8h6v-8h6v8h6v-8h6v8h2V150ZM276 90h4v14h-4ZM286 112h4v12h-4ZM300 150V112h8v-6h8v6h8v-6h8v6h8v-6h8v6h8v-6h8v6h8v-6h8v6h4V150ZM344 124h5v10h-5ZM400 150V88h5v-7h5v7h5v-7h5v7h5v-7h5v7V150ZM412 102h4v12h-4ZM430 150V124l9-6v-12l9 5v39ZM224 162V128h5v-6h5v6h5v-6h5v6h4V162Z" clip-path="url(#fl-l)" fill-rule="evenodd"/>
-    <path class="fl-hw" d="M0 300V262C30 256 52 240 80 236C104 232 118 214 134 200C150 186 160 178 176 176L200 172L214 158L236 156L250 150H420L436 160L460 162C480 170 492 186 510 196C532 208 556 214 580 228L600 236V300ZM262 150V72h6v-8h6v8h6v-8h6v8h6v-8h6v8h2V150ZM276 90h4v14h-4ZM286 112h4v12h-4ZM300 150V112h8v-6h8v6h8v-6h8v6h8v-6h8v6h8v-6h8v6h8v-6h8v6h4V150ZM344 124h5v10h-5ZM400 150V88h5v-7h5v7h5v-7h5v7h5v-7h5v7V150ZM412 102h4v12h-4ZM430 150V124l9-6v-12l9 5v39ZM224 162V128h5v-6h5v6h5v-6h5v6h4V162Z" clip-path="url(#fl-r)" fill-rule="evenodd"/>
-  </g>
-  <path class="fl-edge" d="M3 3H597V300C597 320 518 337 300 337S3 320 3 300Z"/>
-</svg><figcaption>Hrad na brale ako na klubovej vlajke</figcaption></figure>
-</div></section>
-<div class="crenel" aria-hidden="true"></div>
-<section class="pause"><div class="wrap"><p><b>Zimná prestávka.</b> Jar sa začína v nedeľu 21. marca 2027, áčko v ten deň hrá vonku na ihrisku FK Melčice-Lieskové.</p></div></section>
-<section class="sec" aria-labelledby="now-h"><div class="wrap now">
-  <div><div class="sec-head"><div><p class="eyebrow">VI. liga Sever</p><h2 class="h2" id="now-h">Zápas áčka</h2></div></div><article class="mp mp--big">
-  <p class="mp-top"><span class="mp-label">Posledný zápas</span><span>A-mužstvo</span></p>
-  <p class="mp-when"><time datetime="2026-11-01">nedeľa 1. novembra 2026</time></p>
-  <div class="mp-row"><div class="mp-side mp-side--h"><span class="mp-crest"><img class="logo" src="./img/kluby/tj-povazan-pruske.futbalnet.sk.webp" alt="" width="56" height="56" decoding="async"></span><span class="mp-name">TJ Považan Pruské</span><span class="mp-role">domáci</span></div><p class="mp-score"><span class="sr">Výsledok </span>0<span class="mp-colon">:</span>4</p><div class="mp-side mp-side--a is-us"><span class="mp-crest"><img class="logo" src="./img/erb-128.webp" alt="" width="56" height="56" decoding="async"></span><span class="mp-name">OŠK Slovan Beckov</span><span class="mp-role">hostia</span></div></div>
-  <p class="mp-note"><span class="mp-res mp-res--w">Výhra</span><span>polčas 0:2</span></p>
-  <p class="mp-meta">VI. liga Sever, 13. kolo<span aria-hidden="true">&nbsp;· </span>Futbalový štadión TJ Považan Pruské<span aria-hidden="true">&nbsp;· </span>100 divákov</p>
-  <p class="mp-links"><a class="mp-a" href="./zapasy/2026-11-01-a-tj-povazan-pruske/">Priebeh a zostavy<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+<header class="hdr hdr--side"><div class="wrap hdr-in"><a class="brand" href="./" aria-current="page"><img src="./img/erb-128.webp" alt="" width="44" height="44"><span class="brand-t"><span class="brand-n">OŠK Slovan Beckov</span><span class="brand-s">futbal pod hradom</span></span><span class="sr">, úvod</span></a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-haspopup="dialog"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></button></div></header>
+<dialog class="menu" id="menu" aria-label="Menu"><div class="menu-in">
+  <div class="menu-top"><span class="menu-k">OŠK Slovan Beckov</span><button class="menu-x" type="button" data-close><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Zavrieť</span></button></div>
+  <ul class="menu-nav"><li><a href="./" aria-current="page">Úvod</a></li><li><a href="./zapasy/">Zápasy</a></li><li><a href="./tabulky/">Tabuľky</a></li><li><a href="./timy/">Tímy</a></li><li><a href="./klub/">Klub</a></li><li><a href="./kontakt/">Kontakt</a></li></ul>
+</div></dialog>
+<div class="shell"><aside class="side" aria-label="Klub"><a class="brand brand--side" href="./" aria-current="page"><img src="./img/erb-128.webp" alt="" width="44" height="44"><span class="brand-t"><span class="brand-n">OŠK Slovan Beckov</span><span class="brand-s">futbal pod hradom</span></span><span class="sr">, úvod</span></a><nav class="side-nav" aria-label="Hlavné menu"><ul><li><a href="./" aria-current="page">Úvod</a></li><li><a href="./zapasy/">Zápasy</a></li><li><a href="./tabulky/">Tabuľky</a></li><li><a href="./timy/">Tímy</a></li><li><a href="./klub/">Klub</a></li><li><a href="./kontakt/">Kontakt</a></li></ul></nav><a class="side-next" href="./zapasy/2027-03-21-a-fk-melcice-lieskove/"><span>Najbližší zápas áčka</span><b>FK Melčice-Lieskové</b><span>ne 21. 3. · 15:00 · vonku</span></a></aside><div class="shell-main"><main id="obsah">
+<section class="sec sec--first"><div class="wrap">
+  <p class="kicker">Ročník 2026/27 · VI. liga Sever · 12. miesto zo 14</p>
+  <h1 class="h1">Futbal pod Beckovským hradom</h1>
+  <p class="lede">Za desať ročníkov prešlo áčko z 8. ligy do krajskej VI. ligy Sever. V mládeži hrajú 4 tímy.</p>
+  <p class="pause">Zimná prestávka. Áčko začína v nedeľu 21. marca 2027 na ihrisku FK Melčice-Lieskové.</p>
+  <div class="home-card"><article class="mc mc--big">
+  <p class="mc-top"><span class="mc-label">Posledný zápas</span><span>A-mužstvo · VI. liga Sever, 13. kolo</span></p>
+  <div class="mc-row"><div class="mc-side"><span class="mc-crest"><img class="logo" src="./img/kluby/tj-povazan-pruske.futbalnet.sk.webp" alt="" width="56" height="56" decoding="async"></span><span class="mc-name">TJ Považan Pruské</span><span class="sr"> (domáci)</span></div><p class="mc-mid mc-mid--w"><span class="sr">Výsledok </span>0:4</p><div class="mc-side is-us"><span class="mc-crest"><img class="logo" src="./img/erb-128.webp" alt="" width="56" height="56" decoding="async"></span><span class="mc-name">OŠK Slovan Beckov</span><span class="sr"> (hostia)</span></div></div>
+  <p class="mc-when"><time datetime="2026-11-01">nedeľa 1. novembra 2026</time> · Futbalový štadión TJ Považan Pruské · výhra</p>
+  
+  <p class="mc-links"><a class="mc-a" href="./zapasy/2026-11-01-a-tj-povazan-pruske/">Priebeh a zostavy<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
 </article></div>
-  <div><h2 class="h3 now-h2">Mládež</h2><ul class="tb"><li><a class="tb-row" href="./zapasy/2026-11-01-u15-ofk-vrbovce/">
-    <span class="tb-code">U15</span>
-    <span class="tb-main"><span class="tb-top">Starší žiaci&nbsp;· ne 1. 11.&nbsp;· doma</span><span class="tb-opp">OFK Vrbovce</span></span>
-    <span class="tb-score tb-score--l"><span class="sr">Prehra </span>4:6</span>
-  </a></li><li><a class="tb-row" href="./zapasy/2026-11-07-u13-ofk-cachtice/">
-    <span class="tb-code">U13</span>
-    <span class="tb-main"><span class="tb-top">Mladší žiaci&nbsp;· so 7. 11.&nbsp;· vonku</span><span class="tb-opp">OFK Čachtice</span></span>
-    <span class="tb-score tb-score--w"><span class="sr">Výhra </span>0:6</span>
-  </a></li><li><a class="tb-row" href="./timy/u11-pripravka/">
-    <span class="tb-code">U11</span>
-    <span class="tb-main"><span class="tb-top">Prípravka&nbsp;· ne 18. 10.&nbsp;· doma</span><span class="tb-opp">OFK Čachtice</span></span>
-    <span class="tb-score tb-score--none">bez výsl.</span>
-  </a></li><li><a class="tb-row" href="./zapasy/2026-10-24-u9-sk-dolne-srnie/">
-    <span class="tb-code">U9</span>
-    <span class="tb-main"><span class="tb-top">Prípravka&nbsp;· so 24. 10.&nbsp;· vonku</span><span class="tb-opp">ŠK Dolné Srnie</span></span>
-    <span class="tb-score tb-score--none">bez výsl.</span>
-  </a></li></ul><a class="more" href="./mladez/">Mládež a nábor<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
 </div></section>
-<section class="sec sec--stone" aria-labelledby="prog-h"><div class="wrap">
-  <div class="sec-head"><div><p class="eyebrow">Veže a múr</p><h2 class="h2" id="prog-h">Program a výsledky</h2></div><a class="more" href="./zapasy/">Všetky zápasy<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-  <div class="cols2">
-    <div><h3 class="h3">Najbližšie</h3><ol class="mlist mlist--tw"><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="doma"><a class="tw" href="./zapasy/2027-03-21-u15-ofk-cachtice/">
-  <span class="tw-t"><time datetime="2027-03-21">21. 3.</time><span>ne 10:30</span></span>
-  <span class="tw-b"><span class="tw-o">OFK Čachtice</span><span class="tw-k"><span class="nw">U15</span> · 15. kolo</span></span>
-  <span class="tw-w tw-w--h">doma</span>
-</a></li><li class="mrow mrow--tw" data-team="a-muzstvo" data-where="vonku"><a class="tw" href="./zapasy/2027-03-21-a-fk-melcice-lieskove/">
-  <span class="tw-t"><time datetime="2027-03-21">21. 3.</time><span>ne 15:00</span></span>
-  <span class="tw-b"><span class="tw-o">FK Melčice-Lieskové</span><span class="tw-k"><span class="nw">A-mužstvo</span> · 14. kolo</span></span>
-  <span class="tw-w tw-w--a">vonku</span>
-</a></li><li class="mrow mrow--tw" data-team="u9-pripravka" data-where="doma"><a class="tw" href="./zapasy/2027-03-26-u9-tj-jednota-brestovec/">
-  <span class="tw-t"><time datetime="2027-03-26">26. 3.</time><span>pi 15:00</span></span>
-  <span class="tw-b"><span class="tw-o">TJ Jednota Brestovec</span><span class="tw-k"><span class="nw">U9</span> · 10. kolo</span></span>
-  <span class="tw-w tw-w--h">doma</span>
-</a></li><li class="mrow mrow--tw" data-team="u11-pripravka" data-where="doma"><a class="tw" href="./zapasy/2027-03-27-u11-tj-iskra-moravske-lieskove/">
-  <span class="tw-t"><time datetime="2027-03-27">27. 3.</time><span>so 10:30</span></span>
-  <span class="tw-b"><span class="tw-o">TJ Iskra Moravské Lieskové</span><span class="tw-k"><span class="nw">U11</span> · 2. kolo</span></span>
-  <span class="tw-w tw-w--h">doma</span>
-</a></li><li class="mrow mrow--tw" data-team="u13-mladsi-ziaci" data-where="doma"><a class="tw" href="./zapasy/2027-03-27-u13-tj-zavazan-kalnica/">
-  <span class="tw-t"><time datetime="2027-03-27">27. 3.</time><span>so 10:30</span></span>
-  <span class="tw-b"><span class="tw-o">TJ Zavažan Kálnica</span><span class="tw-k"><span class="nw">U13</span> · 10. kolo</span></span>
-  <span class="tw-w tw-w--h">doma</span>
-</a></li><li class="mrow mrow--tw" data-team="u15-starsi-ziaci" data-where="vonku"><a class="tw" href="./zapasy/2027-03-28-u15-tj-iskra-moravske-lieskove/">
-  <span class="tw-t"><time datetime="2027-03-28">28. 3.</time><span>ne 10:30</span></span>
-  <span class="tw-b"><span class="tw-o">TJ Iskra Moravské Lieskové</span><span class="tw-k"><span class="nw">U15</span> · 16. kolo</span></span>
-  <span class="tw-w tw-w--a">vonku</span>
-</a></li></ol></div>
-    <div><h3 class="h3">Posledné výsledky</h3><ul class="st-key" aria-hidden="true"><li><span class="k k--w"></span>výhra</li><li><span class="k k--d"></span>remíza</li><li><span class="k k--l"></span>prehra</li><li><span class="k k--n"></span>bez výsledku</li></ul><ol class="mlist mlist--wall"><li class="mrow mrow--st st--s" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="stone stone--w" href="./zapasy/2026-11-07-u13-ofk-cachtice/">
-  <span class="stone-s"><span class="sr">Výhra, </span>0:6</span>
-  <span class="stone-o">OFK Čachtice</span>
-  <span class="stone-k">7. 11. · <span class="nw">U13</span> · vonku</span>
-</a></li><li class="mrow mrow--st st--m" data-team="a-muzstvo" data-where="vonku"><a class="stone stone--w" href="./zapasy/2026-11-01-a-tj-povazan-pruske/">
-  <span class="stone-s"><span class="sr">Výhra, </span>0:4</span>
-  <span class="stone-o">TJ Považan Pruské</span>
-  <span class="stone-k">1. 11. · <span class="nw">A-mužstvo</span> · vonku</span>
-</a></li><li class="mrow mrow--st st--s" data-team="u15-starsi-ziaci" data-where="doma"><a class="stone stone--l" href="./zapasy/2026-11-01-u15-ofk-vrbovce/">
-  <span class="stone-s"><span class="sr">Prehra, </span>4:6</span>
-  <span class="stone-o">OFK Vrbovce</span>
-  <span class="stone-k">1. 11. · <span class="nw">U15</span> · doma</span>
-</a></li><li class="mrow mrow--st st--m" data-team="a-muzstvo" data-where="doma"><a class="stone stone--l" href="./zapasy/2026-10-25-a-fk-nova-dubnica/">
-  <span class="stone-s"><span class="sr">Prehra, </span>0:5</span>
-  <span class="stone-o">FK Nová Dubnica</span>
-  <span class="stone-k">25. 10. · <span class="nw">A-mužstvo</span> · doma</span>
-</a></li><li class="mrow mrow--st st--s" data-team="u15-starsi-ziaci" data-where="vonku"><a class="stone stone--l" href="./zapasy/2026-10-25-u15-osk-bosaca/">
-  <span class="stone-s"><span class="sr">Prehra, </span>7:0</span>
-  <span class="stone-o">OŠK Bošáca</span>
-  <span class="stone-k">25. 10. · <span class="nw">U15</span> · vonku</span>
-</a></li><li class="mrow mrow--st st--l" data-team="a-muzstvo" data-where="vonku"><a class="stone stone--l" href="./zapasy/2026-10-18-a-tj-vapec-horna-poruba/">
-  <span class="stone-s"><span class="sr">Prehra, </span>2:0</span>
-  <span class="stone-o">TJ Vápeč Horná Poruba</span>
-  <span class="stone-k">18. 10. · <span class="nw">A-mužstvo</span> · vonku</span>
-</a></li><li class="mrow mrow--st st--l" data-team="u15-starsi-ziaci" data-where="doma"><a class="stone stone--l" href="./zapasy/2026-10-18-u15-tj-druzstevnik-hradok/">
-  <span class="stone-s"><span class="sr">Prehra, </span>1:3</span>
-  <span class="stone-o">TJ Družstevník Hrádok</span>
-  <span class="stone-k">18. 10. · <span class="nw">U15</span> · doma</span>
-</a></li><li class="mrow mrow--st st--s" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="stone stone--w" href="./zapasy/2026-10-17-u13-osk-podolie/">
-  <span class="stone-s"><span class="sr">Výhra, </span>0:1</span>
-  <span class="stone-o">OŠK Podolie</span>
-  <span class="stone-k">17. 10. · <span class="nw">U13</span> · vonku</span>
-</a></li><li class="mrow mrow--st st--l" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="stone stone--w" href="./zapasy/2026-10-12-u13-psk-bzince-pod-javorinou/">
-  <span class="stone-s"><span class="sr">Výhra, </span>0:11</span>
-  <span class="stone-o">PŠK Bzince pod Javorinou</span>
-  <span class="stone-k">12. 10. · <span class="nw">U13</span> · vonku</span>
-</a></li></ol></div>
-  </div>
+<section class="sec sec--tint" aria-labelledby="z-h"><div class="wrap">
+  <div class="sec-head"><div><h2 class="h2" id="z-h">Zápasy</h2></div><a class="more" href="./zapasy/">Všetky zápasy<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  <div class="cols2"><div><h3 class="h3">Výsledky</h3><ol class="fxl fxl--res"><li class="mrow fx fx--res fx--a fx--w" data-team="u13-mladsi-ziaci" data-where="vonku"><a class="fx-a" href="./zapasy/2026-11-07-u13-ofk-cachtice/">
+  <time class="fx-d" datetime="2026-11-07"><span class="fx-dd">so</span> <span class="fx-dn">7.</span> <span class="fx-dm">11.</span></time>
+  <span class="fx-o"><span class="fx-on">OFK Čachtice</span><span class="fx-k">U13 · 9. kolo · vonku</span></span>
+  <span class="fx-r"><span class="sc sc--w"><span class="sr">Výhra, </span>6:0</span></span>
+</a></li><li class="mrow fx fx--res fx--a fx--w" data-team="a-muzstvo" data-where="vonku"><a class="fx-a" href="./zapasy/2026-11-01-a-tj-povazan-pruske/">
+  <time class="fx-d" datetime="2026-11-01"><span class="fx-dd">ne</span> <span class="fx-dn">1.</span> <span class="fx-dm">11.</span></time>
+  <span class="fx-o"><span class="fx-on">TJ Považan Pruské</span><span class="fx-k">A-mužstvo · 13. kolo · vonku</span></span>
+  <span class="fx-r"><span class="sc sc--w"><span class="sr">Výhra, </span>4:0</span></span>
+</a></li><li class="mrow fx fx--res fx--h fx--l" data-team="u15-starsi-ziaci" data-where="doma"><a class="fx-a" href="./zapasy/2026-11-01-u15-ofk-vrbovce/">
+  <time class="fx-d" datetime="2026-11-01"><span class="fx-dd">ne</span> <span class="fx-dn">1.</span> <span class="fx-dm">11.</span></time>
+  <span class="fx-o"><span class="fx-on">OFK Vrbovce</span><span class="fx-k">U15 · 13. kolo · doma</span></span>
+  <span class="fx-r"><span class="sc sc--l"><span class="sr">Prehra, </span>4:6</span></span>
+</a></li><li class="mrow fx fx--res fx--h fx--l" data-team="a-muzstvo" data-where="doma"><a class="fx-a" href="./zapasy/2026-10-25-a-fk-nova-dubnica/">
+  <time class="fx-d" datetime="2026-10-25"><span class="fx-dd">ne</span> <span class="fx-dn">25.</span> <span class="fx-dm">10.</span></time>
+  <span class="fx-o"><span class="fx-on">FK Nová Dubnica</span><span class="fx-k">A-mužstvo · 12. kolo · doma</span></span>
+  <span class="fx-r"><span class="sc sc--l"><span class="sr">Prehra, </span>0:5</span></span>
+</a></li><li class="mrow fx fx--res fx--a fx--l" data-team="u15-starsi-ziaci" data-where="vonku"><a class="fx-a" href="./zapasy/2026-10-25-u15-osk-bosaca/">
+  <time class="fx-d" datetime="2026-10-25"><span class="fx-dd">ne</span> <span class="fx-dn">25.</span> <span class="fx-dm">10.</span></time>
+  <span class="fx-o"><span class="fx-on">OŠK Bošáca</span><span class="fx-k">U15 · 12. kolo · vonku</span></span>
+  <span class="fx-r"><span class="sc sc--l"><span class="sr">Prehra, </span>0:7</span></span>
+</a></li></ol></div><div><h3 class="h3">Program</h3><ol class="fxl fxl--up"><li class="mrow fx fx--up fx--h" data-team="u15-starsi-ziaci" data-where="doma"><a class="fx-a" href="./zapasy/2027-03-21-u15-ofk-cachtice/">
+  <time class="fx-d" datetime="2027-03-21"><span class="fx-dd">ne</span> <span class="fx-dn">21.</span> <span class="fx-dm">3.</span></time>
+  <span class="fx-o"><span class="fx-on">OFK Čachtice</span><span class="fx-k">U15 · 15. kolo · doma</span></span>
+  <span class="fx-r"><span class="fx-t">10:30</span></span>
+</a></li><li class="mrow fx fx--up fx--a" data-team="a-muzstvo" data-where="vonku"><a class="fx-a" href="./zapasy/2027-03-21-a-fk-melcice-lieskove/">
+  <time class="fx-d" datetime="2027-03-21"><span class="fx-dd">ne</span> <span class="fx-dn">21.</span> <span class="fx-dm">3.</span></time>
+  <span class="fx-o"><span class="fx-on">FK Melčice-Lieskové</span><span class="fx-k">A-mužstvo · 14. kolo · vonku</span></span>
+  <span class="fx-r"><span class="fx-t">15:00</span></span>
+</a></li><li class="mrow fx fx--up fx--h" data-team="u13-mladsi-ziaci" data-where="doma"><a class="fx-a" href="./zapasy/2027-03-27-u13-tj-zavazan-kalnica/">
+  <time class="fx-d" datetime="2027-03-27"><span class="fx-dd">so</span> <span class="fx-dn">27.</span> <span class="fx-dm">3.</span></time>
+  <span class="fx-o"><span class="fx-on">TJ Zavažan Kálnica</span><span class="fx-k">U13 · 10. kolo · doma</span></span>
+  <span class="fx-r"><span class="fx-t">10:30</span></span>
+</a></li><li class="mrow fx fx--up fx--a" data-team="u15-starsi-ziaci" data-where="vonku"><a class="fx-a" href="./zapasy/2027-03-28-u15-tj-iskra-moravske-lieskove/">
+  <time class="fx-d" datetime="2027-03-28"><span class="fx-dd">ne</span> <span class="fx-dn">28.</span> <span class="fx-dm">3.</span></time>
+  <span class="fx-o"><span class="fx-on">TJ Iskra Moravské Lieskové</span><span class="fx-k">U15 · 16. kolo · vonku</span></span>
+  <span class="fx-r"><span class="fx-t">10:30</span></span>
+</a></li><li class="mrow fx fx--up fx--h" data-team="a-muzstvo" data-where="doma"><a class="fx-a" href="./zapasy/2027-03-28-a-fks-nemsova/">
+  <time class="fx-d" datetime="2027-03-28"><span class="fx-dd">ne</span> <span class="fx-dn">28.</span> <span class="fx-dm">3.</span></time>
+  <span class="fx-o"><span class="fx-on">FKS Nemšová</span><span class="fx-k">A-mužstvo · 15. kolo · doma</span></span>
+  <span class="fx-r"><span class="fx-t">15:00</span></span>
+</a></li></ol></div></div>
 </div></section>
-<section class="sec" aria-labelledby="liga-h"><div class="wrap">
-  <div class="sec-head"><div><h2 class="h2" id="liga-h">Áčko, VI. liga Sever</h2></div><a class="more" href="./tabulky/#a-muzstvo">Celá tabuľka<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-  <div class="liga">
-    <div class="liga-pos"><p class="liga-n">12.</p><p>miesto zo 14 · 7 bodov · skóre 21:43</p></div>
-    <div><div class="tbl-wrap"><table class="tbl"><caption><span class="sr">Výrez tabuľky okolo OŠK Slovan Beckov</span></caption>
+<section class="sec" aria-labelledby="t-h"><div class="wrap"><div class="sec-head"><div><p class="kicker">Áčko</p><h2 class="h2" id="t-h">VI. liga Sever</h2></div><a class="more" href="./tabulky/">Všetky tabuľky<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div><div class="tbl-wrap"><table class="tbl">
   <thead><tr><th scope="col"><abbr title="Poradie">#</abbr></th><th scope="col" class="tl">Tím</th><th scope="col"><abbr title="Zápasy">Z</abbr></th><th scope="col" class="hm"><abbr title="Výhry">V</abbr></th><th scope="col" class="hm"><abbr title="Remízy">R</abbr></th><th scope="col" class="hm"><abbr title="Prehry">P</abbr></th><th scope="col">Skóre</th><th scope="col"><abbr title="Body">B</abbr></th></tr></thead>
-  <tbody><tr><td class="pos">10</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/futbal-fk-melcice-lieskove.futbalnet.sk.webp" alt="" width="24" height="24" loading="lazy" decoding="async"><span>FK Melčice-Lieskové</span></span></th><td>12</td><td class="hm">4</td><td class="hm">0</td><td class="hm">8</td><td class="nw">16:40</td><td><b>12</b></td></tr><tr><td class="pos">11</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/osk-podolie.futbalnet.sk.webp" alt="" width="24" height="24" loading="lazy" decoding="async"><span>OŠK Podolie</span></span></th><td>12</td><td class="hm">3</td><td class="hm">1</td><td class="hm">8</td><td class="nw">23:41</td><td><b>10</b></td></tr><tr class="our"><td class="pos">12</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/erb-128.webp" alt="" width="24" height="24" loading="lazy" decoding="async"><span>OŠK Slovan Beckov</span></span></th><td>12</td><td class="hm">2</td><td class="hm">1</td><td class="hm">9</td><td class="nw">21:43</td><td><b>7</b></td></tr><tr><td class="pos">13</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/tj-povazan-pruske.futbalnet.sk.webp" alt="" width="24" height="24" loading="lazy" decoding="async"><span>TJ Považan Pruské</span></span></th><td>12</td><td class="hm">1</td><td class="hm">1</td><td class="hm">10</td><td class="nw">11:47</td><td><b>4</b></td></tr><tr><td class="pos">14</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/fk-koseca.futbalnet.sk.webp" alt="" width="24" height="24" loading="lazy" decoding="async"><span>FK Košeca</span></span></th><td>0</td><td class="hm">0</td><td class="hm">0</td><td class="hm">0</td><td class="nw">0:0</td><td><b>0</b></td></tr></tbody>
-</table></div></div>
-    <div class="liga-side">
-      <div class="liga-row"><h3 class="h4">Forma</h3><ol class="form" aria-label="Forma: posledných 5 zápasov"><li class="form--d" title="4. 10. TJ Štart Tuchyňa 2:2"><span aria-hidden="true">R</span><span class="sr">Remíza TJ Štart Tuchyňa 2:2</span></li><li class="form--l" title="11. 10. TJ Plevník-Drienové 2:4"><span aria-hidden="true">P</span><span class="sr">Prehra TJ Plevník-Drienové 2:4</span></li><li class="form--l" title="18. 10. TJ Vápeč Horná Poruba 2:0"><span aria-hidden="true">P</span><span class="sr">Prehra TJ Vápeč Horná Poruba 2:0</span></li><li class="form--l" title="25. 10. FK Nová Dubnica 0:5"><span aria-hidden="true">P</span><span class="sr">Prehra FK Nová Dubnica 0:5</span></li><li class="form--w" title="1. 11. TJ Považan Pruské 0:4"><span aria-hidden="true">V</span><span class="sr">Výhra TJ Považan Pruské 0:4</span></li></ol></div>
-      <div class="liga-row liga-row--list"><h3 class="h4">Strelci áčka</h3><ol class="scorers"><li><span>Ján Tuka</span><b>5</b></li><li><span>Lukáš Behúl</span><b>5</b></li><li><span>Daniel Žabár</span><b>3</b></li><li><span>Rastislav Marták</span><b>2</b></li></ol></div>
-    </div>
-  </div>
-</div></section>
-<section class="sec sec--blue" aria-labelledby="ve-h"><div class="wrap">
-  <div class="sec-head"><div><p class="eyebrow">Áčko od 2014/15</p><h2 class="h2" id="ve-h">Cesta na hradby</h2></div><a class="more" href="./klub/#rocniky">Ročníky v tabuľke<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-  <p class="lead">Každý ročník ako veža: čím vyššia súťaž a lepšie miesto, tým vyššia. Zástava znamená titul. Za desať ročníkov sa áčko dostalo z 8. ligy až do krajskej VI. ligy.</p>
-  <div class="tw-chart"><ol class="towers"><li class="tower tower--l7">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V110.0h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 126.0h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">14.</span><span class="tower-y" aria-hidden="true">14/15</span>
-    <span class="sr">2014/15, 7. liga Sever ObFZ Trenčín: 14. miesto zo 14, 12 bodov, skóre 28:96</span>
-  </li><li class="tower tower--l8">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V125.0h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 141.0h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">3.</span><span class="tower-y" aria-hidden="true">15/16</span>
-    <span class="sr">2015/16, 8. liga Nové Mesto ObFZ Trenčín: 3. miesto z 13, 52 bodov, skóre 81:35</span>
-  </li><li class="tower tower--l8">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V122.7h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 138.7h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">2.</span><span class="tower-y" aria-hidden="true">16/17</span>
-    <span class="sr">2016/17, 8. liga Nové Mesto ObFZ Trenčín: 2. miesto z 12, 48 bodov, skóre 77:15</span>
-  </li><li class="tower tower--l8 tower--gold">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V120.0h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 136.0h3v12h-3Z"/>
-      <path class="t-pole" d="M20 120.0V92.0"/><path class="t-flag" d="M20 92.0l14 5 -14 5Z"/>
-    </svg>
-    <span class="tower-p" aria-hidden="true">1.</span><span class="tower-y" aria-hidden="true">17/18</span>
-    <span class="sr">2017/18, 8. liga Nové Mesto ObFZ Trenčín: 1. miesto z 13, 61 bodov, skóre 110:23, víťaz súťaže, 20 výhier z 22 zápasov, 110 gólov</span>
-  </li><li class="tower tower--l7">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V93.8h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 109.8h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">7.</span><span class="tower-y" aria-hidden="true">18/19</span>
-    <span class="sr">2018/19, 7. liga Juh ObFZ Trenčín: 7. miesto zo 14, 36 bodov, skóre 53:47</span>
-  </li><li class="tower tower--l7">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V89.2h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 105.2h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">5.</span><span class="tower-y" aria-hidden="true">19/20</span>
-    <span class="sr">2019/20, 7. liga Juh ObFZ Trenčín: 5. miesto zo 14, 20 bodov, skóre 35:24, nedohraná sezóna (pandémia)</span>
-  </li><li class="tower tower--l7 tower--gold">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V80.0h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 96.0h3v12h-3Z"/>
-      <path class="t-pole" d="M20 80.0V52.0"/><path class="t-flag" d="M20 52.0l14 5 -14 5Z"/>
-    </svg>
-    <span class="tower-p" aria-hidden="true">1.</span><span class="tower-y" aria-hidden="true">20/21</span>
-    <span class="sr">2020/21, 7. liga Juh ObFZ Trenčín: 1. miesto zo 14, 22 bodov, skóre 31:11, víťaz súťaže, nedohraná sezóna (pandémia), bez prehry</span>
-  </li><li class="tower tower--l7">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V89.2h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 105.2h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">5.</span><span class="tower-y" aria-hidden="true">21/22</span>
-    <span class="sr">2021/22, 7. liga Juh ObFZ Trenčín: 5. miesto zo 14, 41 bodov, skóre 54:39</span>
-  </li><li class="tower tower--l8 tower--gold">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V120.0h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 136.0h3v12h-3Z"/>
-      <path class="t-pole" d="M20 120.0V92.0"/><path class="t-flag" d="M20 92.0l14 5 -14 5Z"/>
-    </svg>
-    <span class="tower-p" aria-hidden="true">1.</span><span class="tower-y" aria-hidden="true">22/23</span>
-    <span class="sr">2022/23, 8. liga Juh ObFZ Trenčín: 1. miesto z 13, 58 bodov, skóre 65:19, víťaz súťaže</span>
-  </li><li class="tower tower--l7">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V86.0h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 102.0h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">4.</span><span class="tower-y" aria-hidden="true">23/24</span>
-    <span class="sr">2023/24, 7. liga ObFZ Trenčín: 4. miesto zo 16, 56 bodov, skóre 59:38</span>
-  </li><li class="tower tower--l7">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V94.0h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 110.0h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">8.</span><span class="tower-y" aria-hidden="true">24/25</span>
-    <span class="sr">2024/25, 7. liga ObFZ Trenčín: 8. miesto zo 16, 43 bodov, skóre 67:54</span>
-  </li><li class="tower tower--l6">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V68.0h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 84.0h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">15.</span><span class="tower-y" aria-hidden="true">25/26</span>
-    <span class="sr">2025/26, VI. liga Sever: 15. miesto zo 16, 25 bodov, skóre 33:70, nováčik krajskej súťaže, záchrana</span>
-  </li><li class="tower tower--l6 tower--now">
-    <svg class="tower-s" viewBox="0 0 40 200" aria-hidden="true" focusable="false">
-      <path class="t-guide" d="M0 144H40M0 104H40M0 64H40"/>
-      <path class="t-body" d="M8 190V65.4h4.80v6h4.80v-6h4.80v6h4.80v-6h4.80V190Z"/>
-      <path class="t-slit" d="M18.5 81.4h3v12h-3Z"/>
-      
-    </svg>
-    <span class="tower-p" aria-hidden="true">12.</span><span class="tower-y" aria-hidden="true">26/27</span>
-    <span class="sr">2026/27, VI. liga Sever: 12. miesto zo 14, priebežne</span>
-  </li></ol><ul class="tw-key" aria-hidden="true"><li><span class="tk tk--8"></span>8. liga</li><li><span class="tk tk--7"></span>7. liga</li><li><span class="tk tk--6"></span>VI. liga</li><li><span class="tk-flag"></span>titul</li></ul></div>
-</div></section>
-<section class="sec" aria-labelledby="ti-h"><div class="wrap titles">
-  <div>
-    <div class="sec-head"><div><p class="eyebrow">Tituly</p><h2 class="h2" id="ti-h">Tri zástavy na veži</h2></div></div>
-    <ul class="banners"><li><p class="banner-y">2017/18</p><p class="banner-l">8. liga Nové Mesto ObFZ Trenčín</p><p class="banner-s">110:23 · 61 bodov</p></li><li><p class="banner-y">2020/21</p><p class="banner-l">7. liga Juh ObFZ Trenčín</p><p class="banner-s">31:11 · 22 bodov</p></li><li><p class="banner-y">2022/23</p><p class="banner-l">8. liga Juh ObFZ Trenčín</p><p class="banner-s">65:19 · 58 bodov</p></li></ul>
-    <p>Ako nováčik krajskej VI. ligy Sever sa áčko napriek zraneniam zachránilo na 15. mieste. Na jeseň porazilo nového majstra ZFC Trenčín aj Ladce, ktoré vypadli z V. ligy, a doma zdolalo súperov v boji o záchranu, Košecu a Dolné Kočkovce.</p>
-    <p class="src">Zdroj: Sportnet, Beckovské noviny 4/2026.</p>
-  </div>
-  <aside class="jasin">
-    <div class="jasin-photo" aria-hidden="true"><span>Fotografia sa nezachovala</span></div>
-    <p class="eyebrow">August 1971</p>
-    <h2 class="h3">Brankár storočia na obede v Beckove</h2>
-    <p>V auguste 1971 sa v Beckove zastavil Lev Jašin, legendárny brankár Dynama Moskva a držiteľ Zlatej lopty z roku 1963. S manželkou boli na kúpeľnom pobyte v Piešťanoch a v Beckove sa zastavili v hoteli na obed. Mladý fanúšik ho spoznal, fotografia sa nezachovala.</p>
-    <p class="src">Zdroj: Beckovské noviny 4/2025.</p>
-  </aside>
-</div></section>
-<section class="sec sec--stone" aria-labelledby="ml-h"><div class="wrap">
-  <div class="sec-head"><div><p class="eyebrow">Od U9 po U15</p><h2 class="h2" id="ml-h">Mládež</h2></div><a class="more" href="./mladez/">Mládež a nábor<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-  <ul class="medals"><li><p class="medal-k">Bošáca cup U9</p><p>1. februára 2026 vyhrala prípravka U9 všetky zápasy a turnaj.</p></li><li><p class="medal-k">Halové turnaje ObFZ</p><p>V januári 2026 bronz pre U9 aj U13 na turnajoch o pohár predsedu ObFZ Trenčín v Bošáci.</p></li><li><p class="medal-k">Ročník 2025/26</p><p>U9 a U13 skončili vo svojich súťažiach druhé, U11 štvrtá. Ukončenie ročníka bolo 26. júna 2026 na ihrisku.</p></li></ul>
-  <p class="src">Zdroj: Beckovské noviny 1/2026 a 4/2026.</p>
-</div></section>
-<section class="sec" aria-labelledby="ob-h"><div class="wrap">
-  <div class="sec-head"><div><p class="eyebrow">Obec pod Považským Inovcom</p><h2 class="h2" id="ob-h">Beckov a hrad</h2></div><a class="more" href="./klub/#obec">Viac o obci<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-  <ol class="boards"><li><p class="board-k">Hrad na brale</p><p>Beckovský hrad stojí na strmom skalnom brale nad Váhom. Je národnou kultúrnou pamiatkou a patrí obci.</p></li><li><p class="board-k">Stibor zo Stiboríc</p><p>Koncom 14. storočia si hrad za sídlo vybral Stibor zo Stiboríc, jeden z najmocnejších veľmožov Uhorska a radca kráľa Žigmunda.</p></li><li><p class="board-k">1729</p><p>Požiar sa z mestečka rozšíril na hrad a zničil jeho interiéry. Hrad už neobnovili a zostal z neho zrúcanina.</p></li><li><p class="board-k">Šašo Bubeník</p><p>S hradom sa spája povesť o šašovi Bubeníkovi, ktorého dal pán hradu zhodiť z brala. Historicky podložená nie je.</p></li><li><p class="board-k">Jozef Miloslav Hurban</p><p>Rodák z Beckova (1817 – 1888), evanjelický kňaz, spisovateľ, jeden zo zakladateľov spisovnej slovenčiny a prvý predseda Slovenskej národnej rady.</p></li></ol>
-  <p class="src">Zdroj: Slovakia.travel a Wikipédia (Beckovský hrad), web obce Beckov (O hrade, Osobnosti).</p>
-</div></section>
-<section class="sec sec--blue" aria-labelledby="ih-h"><div class="wrap pitch">
-  <div>
-    <div class="sec-head"><div><p class="eyebrow">Ihrisko</p><h2 class="h2" id="ih-h">Futbalové ihrisko OŠK Slovan Beckov</h2></div></div>
-    <ul class="mini"><li><b>Pri hrádzi</b> Ihrisko leží pri hrádzi. V máji 2025 sa pri prejazde cez hrádzu pri ihrisku začala stavba cyklotrasy, ktorá spojí cyklomagistrálu s obcou.</li><li><b>Workout</b> V roku 2023 pribudol v areáli ihriska workoutový park, postavený z daru 10 000 €. Podľa obce je skvelým doplnkom pre futbalistov.</li><li><b>Pre deti</b> Pri workoutovom ihrisku v areáli je aj detské ihrisko, presunuté sem v roku 2025.</li></ul>
-    <p class="btns"><a class="btn btn--yellow" href="https://www.google.com/maps/search/?api=1&query=48.7895417,17.8886728" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>Navigovať</a><a class="btn btn--ghost" href="./ihrisko/">O ihrisku</a></p>
-  </div>
-  <div class="pitch-next"><p class="eyebrow">Najbližšie doma</p><article class="mp">
-  <p class="mp-top"><span class="mp-label">Najbližší zápas</span><span>A-mužstvo</span></p>
-  <p class="mp-when"><time datetime="2027-03-28">nedeľa 28. marca 2027</time></p>
-  <div class="mp-row"><div class="mp-side mp-side--h is-us"><span class="mp-crest"><img class="logo" src="./img/erb-128.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span><span class="mp-name">OŠK Slovan Beckov</span><span class="mp-role">domáci</span></div><p class="mp-score"><span class="mp-time"><span class="sr">Výkop o </span>15:00</span></p><div class="mp-side mp-side--a"><span class="mp-crest"><img class="logo" src="./img/kluby/fks-nemsova.futbalnet.sk.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></span><span class="mp-name">FKS Nemšová</span><span class="mp-role">hostia</span></div></div>
-  <p class="mp-note"><span class="cd" data-kickoff="2027-03-28T15:00:00+02:00" hidden></span></p>
-  <p class="mp-meta">VI. liga Sever, 15. kolo</p>
-  <p class="mp-links"><a class="mp-a" href="./kalendar/zapas-6a4f3e46d14e91f303297969.ics" download><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Do kalendára</a></p>
-</article></div>
+  <tbody><tr><td class="pos">1</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/tj-tatran-cementaren-ladce.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>TJ Tatran Ladce</span></span></th><td>12</td><td class="hm">9</td><td class="hm">3</td><td class="hm">0</td><td class="nw">45:7</td><td><b>30</b></td></tr><tr><td class="pos">2</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/tj-slovan-kosecke-podhradie.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>TJ Slovan Košecké Podhradie</span></span></th><td>12</td><td class="hm">10</td><td class="hm">0</td><td class="hm">2</td><td class="nw">37:11</td><td><b>30</b></td></tr><tr><td class="pos">3</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/tj-vapec-horna-poruba.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>TJ Vápeč Horná Poruba</span></span></th><td>12</td><td class="hm">7</td><td class="hm">2</td><td class="hm">3</td><td class="nw">37:18</td><td><b>23</b></td></tr><tr><td class="pos">4</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/fks-nemsova.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>FKS Nemšová</span></span></th><td>12</td><td class="hm">6</td><td class="hm">3</td><td class="hm">3</td><td class="nw">18:13</td><td><b>21</b></td></tr><tr><td class="pos">5</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/tj-spartak-lysa-pod-makytou.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>TJ Spartak Lysá pod Makytou</span></span></th><td>12</td><td class="hm">6</td><td class="hm">2</td><td class="hm">4</td><td class="nw">24:19</td><td><b>20</b></td></tr><tr><td class="pos">6</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/tj-start-tuchyna.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>TJ Štart Tuchyňa</span></span></th><td>12</td><td class="hm">6</td><td class="hm">1</td><td class="hm">5</td><td class="nw">29:24</td><td><b>19</b></td></tr><tr><td class="pos">7</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/tj-plevnik-drienove.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>TJ Plevník-Drienové</span></span></th><td>12</td><td class="hm">5</td><td class="hm">3</td><td class="hm">4</td><td class="nw">20:25</td><td><b>18</b></td></tr><tr><td class="pos">8</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/issf_club_9490.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>FK Nová Dubnica</span></span></th><td>12</td><td class="hm">5</td><td class="hm">2</td><td class="hm">5</td><td class="nw">25:14</td><td><b>17</b></td></tr><tr><td class="pos">9</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/tj-jrd-vlara-klucove.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>FK Kľúčové</span></span></th><td>12</td><td class="hm">4</td><td class="hm">1</td><td class="hm">7</td><td class="nw">26:30</td><td><b>13</b></td></tr><tr><td class="pos">10</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/futbal-fk-melcice-lieskove.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>FK Melčice-Lieskové</span></span></th><td>12</td><td class="hm">4</td><td class="hm">0</td><td class="hm">8</td><td class="nw">16:40</td><td><b>12</b></td></tr><tr><td class="pos">11</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/osk-podolie.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>OŠK Podolie</span></span></th><td>12</td><td class="hm">3</td><td class="hm">1</td><td class="hm">8</td><td class="nw">23:41</td><td><b>10</b></td></tr><tr class="our"><td class="pos">12</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/erb-128.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>OŠK Slovan Beckov</span></span></th><td>12</td><td class="hm">2</td><td class="hm">1</td><td class="hm">9</td><td class="nw">21:43</td><td><b>7</b></td></tr><tr><td class="pos">13</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/tj-povazan-pruske.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>TJ Považan Pruské</span></span></th><td>12</td><td class="hm">1</td><td class="hm">1</td><td class="hm">10</td><td class="nw">11:47</td><td><b>4</b></td></tr><tr><td class="pos">14</td><th scope="row" class="tl"><span class="tteam"><img class="logo" src="./img/kluby/fk-koseca.futbalnet.sk.webp" alt="" width="22" height="22" loading="lazy" decoding="async"><span>FK Košeca</span></span></th><td>0</td><td class="hm">0</td><td class="hm">0</td><td class="hm">0</td><td class="nw">0:0</td><td><b>0</b></td></tr></tbody>
+</table></div></div></section>
+<section class="sec sec--tint" aria-labelledby="ti-h"><div class="wrap">
+  <div class="sec-head"><div><h2 class="h2" id="ti-h">Tri tituly za desať rokov</h2></div><a class="more" href="./klub/">Ročníky a história<svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  <ol class="titles"><li><b>2017/18</b><span>8. liga Nové Mesto ObFZ Trenčín</span><small>110:23 · 61 b</small></li><li><b>2020/21</b><span>7. liga Juh ObFZ Trenčín</span><small>31:11 · 22 b</small></li><li><b>2022/23</b><span>8. liga Juh ObFZ Trenčín</span><small>65:19 · 58 b</small></li></ol>
 </div></section>
 </main>
-<footer class="ftr">
-  <div class="ftr-wall" aria-hidden="true"></div>
-  <div class="wrap ftr-grid">
-    <div class="ftr-club">
-      <img src="./img/erb-128.webp" alt="" width="64" height="64" loading="lazy">
-      <p class="ftr-name">OŠK Slovan Beckov</p>
-      <p class="ftr-motto">Futbal pod Beckovským hradom.</p>
-    </div>
-    <div><h2 class="ftr-h">Ihrisko</h2><p>Futbalové ihrisko OŠK Slovan Beckov<br>916 38 Beckov</p><p><a href="https://www.google.com/maps/search/?api=1&query=48.7895417,17.8886728" rel="noopener">Navigovať na ihrisko</a></p><p>Najbližšie doma: <a href="./zapasy/2027-03-28-a-fks-nemsova/">28. 3. o 15:00 proti FKS Nemšová</a></p></div>
-    <div><h2 class="ftr-h">Kontakt</h2><p>Obecný športový klub Slovan Beckov<br><a href="mailto:david.kacerek@centrum.sk">david.kacerek<wbr>@centrum.sk</a></p><p><a href="https://www.facebook.com/OSKSlovanBeckov/" rel="noopener">Facebook klubu</a></p></div>
-    <div><h2 class="ftr-h">Zdroje</h2><p>Výsledky zo Sportnetu (Futbalnet), aktualizované 17. 11. 2026. Správy z klubu podľa Beckovských novín, obec podľa webu obce.</p><p><a href="https://sportnet.sme.sk/futbalnet/k/osk-slovan-beckov/" rel="noopener">Klub na Sportnete</a></p></div>
-  </div>
-  <div class="ftr-bar"><div class="wrap ftr-bar-in"><span>© 2026 Obecný športový klub Slovan Beckov</span><a href="./ochrana-sukromia/">Ochrana súkromia</a><a href="./admin/">Administrácia (ukážka)</a></div></div>
-</footer>
+<footer class="ftr"><div class="wrap ftr-in">
+  <div class="ftr-id"><img src="./img/erb-128.webp" alt="" width="48" height="48" loading="lazy"><div><p class="ftr-name">OŠK Slovan Beckov</p><p>Futbalové ihrisko OŠK Slovan Beckov, Beckov, 916 38 Beckov</p></div></div>
+  <ul class="ftr-links"><li><a href="https://www.google.com/maps/search/?api=1&query=48.7895417,17.8886728" rel="noopener">Navigovať na ihrisko</a></li><li><a href="mailto:david.kacerek@centrum.sk">david.kacerek<wbr>@centrum.sk</a></li><li><a href="https://www.facebook.com/OSKSlovanBeckov/" rel="noopener">Facebook</a></li><li><a href="https://sportnet.sme.sk/futbalnet/k/osk-slovan-beckov/" rel="noopener">Sportnet</a></li></ul>
+  <p class="ftr-src">Výsledky zo Sportnetu, aktualizované 17. 11. 2026. Správy z klubu podľa Beckovských novín, obec podľa webu obce.</p>
+</div><div class="wrap ftr-bar"><span>© 2026 Obecný športový klub Slovan Beckov</span><a href="./ochrana-sukromia/">Ochrana súkromia</a><a href="./admin/">Administrácia (ukážka)</a></div></footer></div></div>
 </body>
 </html>
