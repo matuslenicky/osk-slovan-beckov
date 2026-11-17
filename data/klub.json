@@ -1,0 +1,105 @@
+{
+  "_zdroj": "Ručne zapísané len zo zverejnených zdrojov (uvedené pri každej časti). Nič nedopĺňať odhadom – chýbajúce údaje dodá klub.",
+  "nazov": "OŠK Slovan Beckov",
+  "kratky": "Beckov",
+  "pravnyNazov": "Obecný športový klub Slovan Beckov",
+  "_pravnyNazov": "Sportnet; web obce Beckov (Športové kluby): v roku 2010 premenovanie TJ Slovan Beckov na OŠK Slovan Beckov",
+  "mesto": "Beckov",
+  "farby": "modrá, biela a žltá",
+  "_farby": "klubová vlajka na Sportnete (modro-biela s hradom, nápis SLOVAN žltou)",
+  "erbAlt": "Vlajka OŠK Slovan Beckov: modro-biele pole s obrysom Beckovského hradu na brale a nápisom OŠK Slovan Beckov",
+  "adresa": ["Beckov", "916 38 Beckov"],
+  "_adresa": "Sportnet (PSČ 916 38)",
+  "kontakt": { "email": "david.kacerek@centrum.sk", "facebook": "https://www.facebook.com/OSKSlovanBeckov/" },
+  "_kontakt": "Sportnet (e-mail); web obce Beckov, stránka Športové kluby (Facebook klubu)",
+  "sportnetUrl": "https://sportnet.sme.sk/futbalnet/k/osk-slovan-beckov/",
+  "noviny": "https://www.obec-beckov.sk/sk/organizacie-a-institucie/60-beckovske-noviny",
+  "_noviny": "Beckovské noviny, noviny obce od roku 1996 (šesť čísel ročne)",
+  "stadion": {
+    "_zdroj": "Sportnet (názov, poloha); Beckovské noviny 3/2025, 4/2026 a 5/2026",
+    "nazov": "Futbalové ihrisko OŠK Slovan Beckov",
+    "geo": [48.7895417, 17.8886728],
+    "fakty": [
+      { "k": "Pri hrádzi", "t": "Ihrisko leží pri hrádzi. V máji 2025 sa pri prejazde cez hrádzu pri ihrisku začala stavba cyklotrasy, ktorá spojí cyklomagistrálu s obcou." },
+      { "k": "Workout", "t": "V roku 2023 pribudol v areáli ihriska workoutový park, postavený z daru 10 000 €. Podľa obce je skvelým doplnkom pre futbalistov." },
+      { "k": "Pre deti", "t": "Pri workoutovom ihrisku v areáli je aj detské ihrisko, presunuté sem v roku 2025." }
+    ]
+  },
+  "rocniky": {
+    "_zdroj": "Sportnet – konečné tabuľky áčka (dospelí) v jednotlivých sezónach, stiahnuté 17. 11. 2026",
+    "zoznam": [
+      { "rok": "2014/15", "liga": "7. liga Sever ObFZ Trenčín", "uroven": 7, "poz": 14, "z": 14, "skore": "28:96", "body": 12 },
+      { "rok": "2015/16", "liga": "8. liga Nové Mesto ObFZ Trenčín", "uroven": 8, "poz": 3, "z": 13, "skore": "81:35", "body": 52 },
+      { "rok": "2016/17", "liga": "8. liga Nové Mesto ObFZ Trenčín", "uroven": 8, "poz": 2, "z": 12, "skore": "77:15", "body": 48 },
+      { "rok": "2017/18", "liga": "8. liga Nové Mesto ObFZ Trenčín", "uroven": 8, "poz": 1, "z": 13, "skore": "110:23", "body": 61, "majster": true, "pozn": "20 výhier z 22 zápasov, 110 gólov" },
+      { "rok": "2018/19", "liga": "7. liga Juh ObFZ Trenčín", "uroven": 7, "poz": 7, "z": 14, "skore": "53:47", "body": 36 },
+      { "rok": "2019/20", "liga": "7. liga Juh ObFZ Trenčín", "uroven": 7, "poz": 5, "z": 14, "skore": "35:24", "body": 20, "pozn": "nedohraná sezóna (pandémia)" },
+      { "rok": "2020/21", "liga": "7. liga Juh ObFZ Trenčín", "uroven": 7, "poz": 1, "z": 14, "skore": "31:11", "body": 22, "majster": true, "pozn": "nedohraná sezóna (pandémia), bez prehry" },
+      { "rok": "2021/22", "liga": "7. liga Juh ObFZ Trenčín", "uroven": 7, "poz": 5, "z": 14, "skore": "54:39", "body": 41 },
+      { "rok": "2022/23", "liga": "8. liga Juh ObFZ Trenčín", "uroven": 8, "poz": 1, "z": 13, "skore": "65:19", "body": 58, "majster": true },
+      { "rok": "2023/24", "liga": "7. liga ObFZ Trenčín", "uroven": 7, "poz": 4, "z": 16, "skore": "59:38", "body": 56 },
+      { "rok": "2024/25", "liga": "7. liga ObFZ Trenčín", "uroven": 7, "poz": 8, "z": 16, "skore": "67:54", "body": 43 },
+      { "rok": "2025/26", "liga": "VI. liga Sever", "uroven": 6, "poz": 15, "z": 16, "skore": "33:70", "body": 25, "pozn": "nováčik krajskej súťaže, záchrana" }
+    ]
+  },
+  "sezona2526": {
+    "_zdroj": "Beckovské noviny 4/2026 (OŠK Slovan Beckov)",
+    "text": "Ako nováčik krajskej VI. ligy Sever sa áčko napriek zraneniam zachránilo na 15. mieste. Na jeseň porazilo nového majstra ZFC Trenčín aj Ladce, ktoré vypadli z V. ligy, a doma zdolalo súperov v boji o záchranu, Košecu a Dolné Kočkovce."
+  },
+  "mladez": {
+    "_zdroj": "Beckovské noviny 1/2026 a 4/2026",
+    "body": [
+      { "k": "Bošáca cup U9", "t": "1. februára 2026 vyhrala prípravka U9 všetky zápasy a turnaj." },
+      { "k": "Halové turnaje ObFZ", "t": "V januári 2026 bronz pre U9 aj U13 na turnajoch o pohár predsedu ObFZ Trenčín v Bošáci." },
+      { "k": "Ročník 2025/26", "t": "U9 a U13 skončili vo svojich súťažiach druhé, U11 štvrtá. Ukončenie ročníka bolo 26. júna 2026 na ihrisku." }
+    ]
+  },
+  "jasin": {
+    "_zdroj": "Beckovské noviny 4/2025 (pobyt overený v piešťanskej kúpeľnej knihe, august 1971)",
+    "nadpis": "Brankár storočia na obede v Beckove",
+    "text": "V auguste 1971 sa v Beckove zastavil Lev Jašin, legendárny brankár Dynama Moskva a držiteľ Zlatej lopty z roku 1963. S manželkou boli v Piešťanoch na kúpeľoch a v Beckove sa zastavili v hoteli na obed. Mladý fanúšik ho spoznal, fotografia sa nezachovala."
+  },
+  "historia": [
+    { "rok": "1971", "text": "V Beckove sa na obed zastavil Lev Jašin, ktorého v roku 2000 vyhlásili za najlepšieho brankára storočia.", "zdroj": "Beckovské noviny 4/2025" },
+    { "rok": "2010", "text": "Výročná členská schôdza premenovala TJ Slovan Beckov na Obecný športový klub Slovan Beckov.", "zdroj": "web obce Beckov" },
+    { "rok": "2017/18", "text": "Titul v 8. lige Nové Mesto so skóre 110:23, 20 výhier z 22 zápasov.", "zdroj": "Sportnet" },
+    { "rok": "2020/21", "text": "Prvé miesto v nedohranej 7. lige Juh, bez prehry.", "zdroj": "Sportnet" },
+    { "rok": "2022/23", "text": "Titul v 8. lige Juh ObFZ Trenčín.", "zdroj": "Sportnet" },
+    { "rok": "2025/26", "text": "Prvý ročník v krajskej VI. lige Sever a záchrana na 15. mieste.", "zdroj": "Beckovské noviny 4/2026, Sportnet" }
+  ],
+  "obec": {
+    "_zdroj": "Slovakia.travel a Wikipédia (Beckovský hrad); web obce Beckov (O hrade, Osobnosti)",
+    "fakty": [
+      { "k": "Hrad na brale", "t": "Beckovský hrad stojí na strmom skalnom brale nad Váhom. Je národnou kultúrnou pamiatkou a patrí obci." },
+      { "k": "Stibor zo Stiboríc", "t": "Koncom 14. storočia si hrad za sídlo vybral Stibor zo Stiboríc, jeden z najmocnejších veľmožov Uhorska a radca kráľa Žigmunda." },
+      { "k": "1729", "t": "Požiar sa z mestečka rozšíril na hrad a zničil jeho interiéry. Hrad už neobnovili a zostal z neho zrúcanina." },
+      { "k": "Šašo Bubeník", "t": "S hradom sa spája povesť o šašovi Bubeníkovi, ktorého dal pán hradu zhodiť z brala. Historicky podložená nie je." },
+      { "k": "Jozef Miloslav Hurban", "t": "Rodák z Beckova (1817 – 1888), evanjelický kňaz, spisovateľ, jeden zo zakladateľov spisovnej slovenčiny a prvý predseda Slovenskej národnej rady." }
+    ]
+  },
+  "uspechy": [
+    { "rok": "2017/18", "text": "víťaz 8. ligy Nové Mesto ObFZ Trenčín" },
+    { "rok": "2020/21", "text": "1. miesto v nedohranej 7. lige Juh" },
+    { "rok": "2022/23", "text": "víťaz 8. ligy Juh ObFZ Trenčín" },
+    { "rok": "2025/26", "text": "prvý ročník v krajskej VI. lige Sever" }
+  ],
+  "sutaze": {
+    "_pozn": "čitateľné názvy súťaží namiesto skratiek a názvov so sponzormi zo Sportnetu",
+    "Slovnaft Cup": "Slovnaft Cup",
+    "VI. liga  Sever  Macron | yoursport  ZsFZ": "VI. liga Sever",
+    "VI. liga Sever Macron | yoursport ZsFZ": "VI. liga Sever",
+    "IV. liga SŽ U15 - ObFZ TN": "IV. liga starších žiakov U15",
+    "IV. liga MŽ U13 - ObFZ TN": "IV. liga mladších žiakov U13",
+    "III. liga U11 - ObFZ TN": "III. liga prípraviek U11",
+    "III. liga U09 - ObFZ TN": "III. liga prípraviek U9"
+  },
+  "nazvy": {
+    "_pozn": "čitateľné názvy súperov namiesto úradných názvov a veľkých písmen zo Sportnetu",
+    "FUTBAL - FK MELČICE - LIESKOVÉ": "FK Melčice-Lieskové",
+    "Futbalový klub Kľúčové": "FK Kľúčové",
+    "Futbalový klub Nová Dubnica": "FK Nová Dubnica",
+    "Futbalový klub Potvorice": "FK Potvorice",
+    "TJ Tatran Cementáreň Ladce": "TJ Tatran Ladce",
+    "TJ Plevník - Drienové": "TJ Plevník-Drienové"
+  }
+}
