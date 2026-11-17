@@ -1,0 +1,101 @@
+/* OŠK Slovan Beckov – „Bočný panel“. Svetlý kameň v paneli, biela plocha, modrá z vlajky, žltá len v drobnostiach. */
+:root {
+  --bg: #fff; --paper: #fff; --ink: #19203a; --muted: #585e72; --line: #e2e0d8;
+  --blue: #1d3480; --yellow: #e5b72a; --stone: #f2f0ea; --focus: #1d3480; --link: #1d3480;
+  --disp: 'Libre Caslon Display', Georgia, 'Times New Roman', serif;
+  --text: 'Libre Caslon Text', Georgia, 'Times New Roman', serif;
+  --text-size: 1.0313rem; --lh: 1.7;
+  --side-w: 290px;
+  --menu-bg: #f2f0ea; --menu-ink: #19203a;
+}
+.h1, .h2, .brand-n, .teams-n, .stat b, .mc-mid, .titles b, .side-next b { font-family: var(--disp); font-weight: 400; }
+.h1 { font-size: clamp(2.3rem, 6vw, 3.8rem); line-height: 1.06; color: var(--blue); letter-spacing: -.01em; }
+.h2 { font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.15; color: var(--blue); margin-bottom: 14px; }
+.h3 { font: 700 .9375rem/1.3 var(--text); letter-spacing: .06em; margin-bottom: 8px; }
+.h4 { font-weight: 700; }
+.kicker { font-size: .875rem; font-style: italic; color: var(--muted); }
+.lede { margin-top: 12px; max-width: 54ch; font-size: 1.1875rem; line-height: 1.6; color: var(--muted); }
+.pause { margin-top: 10px; font-style: italic; color: var(--muted); }
+.more { font-style: italic; color: var(--blue); }
+.more .i { width: 15px; height: 15px; }
+.btn { background: var(--blue); color: #fff; }
+.btn:hover { background: #142662; }
+.btn--line { background: transparent; color: var(--blue); border-color: var(--blue); }
+.btn--line:hover { background: var(--blue); color: #fff; }
+.sec--tint { background: var(--stone); }
+
+/* bočný panel */
+.side { background: var(--stone); border-right: 1px solid var(--line); }
+.brand--side { flex-direction: column; align-items: flex-start; gap: 14px; }
+.brand--side img { height: 92px; }
+.brand--side .brand-n { font-size: 1.6rem; line-height: 1.1; white-space: normal; color: var(--blue); }
+.brand-s { font-size: .875rem; font-style: italic; color: var(--muted); }
+.side-nav a { padding: 4px 0; font-size: 1.0625rem; color: var(--ink); border-bottom: 1px solid var(--line); }
+.side-nav a:hover { color: var(--blue); }
+.side-nav a[aria-current="page"] { color: var(--blue); font-weight: 700; }
+.side-nav a[aria-current="page"]::after { content: ''; width: 8px; height: 8px; margin-left: auto; border-radius: 50%; background: var(--yellow); }
+.side-next { padding: 16px; background: #fff; border-radius: 4px; font-size: .9375rem; line-height: 1.4; }
+.side-next span:first-child { font-size: .8125rem; font-style: italic; color: var(--muted); }
+.side-next b { font-size: 1.3rem; line-height: 1.2; color: var(--blue); }
+.side-next:hover b { text-decoration: underline; }
+/* hlavička na telefóne */
+.hdr--side { background: var(--stone); border-bottom: 1px solid var(--line); }
+.hdr--side .brand-n { font-family: var(--disp); font-size: 1.25rem; color: var(--blue); }
+.menu-btn { background: var(--blue); color: #fff; border: 0; border-radius: 4px; }
+.menu-k { font-family: var(--disp); font-size: 1.2rem; color: var(--blue); }
+.menu-nav a { font: 400 2rem/1.15 var(--disp); color: var(--blue); border-bottom: 1px solid var(--line); }
+.menu-nav a[aria-current="page"]::after { content: ''; width: 10px; height: 10px; margin-left: 12px; border-radius: 50%; background: var(--yellow); }
+.menu-x { border-radius: 4px; }
+
+/* obsah */
+.home-card { margin-top: 30px; max-width: 620px; }
+.titles { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+.titles li { display: flex; flex-direction: column; gap: 2px; padding: 20px 18px; background: #fff; border-radius: 4px; }
+.titles b { font-size: 2rem; line-height: 1; color: var(--blue); }
+.titles small { font-size: .875rem; color: var(--muted); }
+.fx { border-bottom: 1px solid var(--line); }
+.fx-a { grid-template-columns: 58px minmax(0, 1fr) auto; min-height: 58px; padding: 6px 0; }
+.fx-d { font-size: .9375rem; font-weight: 700; color: var(--blue); }
+.fx-dd { font-weight: 400; font-style: italic; font-size: .8125rem; color: var(--muted); }
+.fx-on { line-height: 1.3; }
+.fx-k { font-size: .8125rem; }
+.fx-t { font-weight: 700; color: var(--blue); }
+.sc { font-weight: 700; min-width: 50px; padding: 3px 8px; border-radius: 4px; }
+.sc--w { background: var(--blue); color: #fff; }
+.sc--d { box-shadow: inset 0 0 0 1px var(--blue); color: var(--blue); }
+.sc--l { color: var(--muted); }
+.sc--n { color: var(--muted); font-size: .875rem; }
+.month-h { font: 400 1.3rem/1.2 var(--disp); color: var(--blue); }
+.form li { border-radius: 4px; font-weight: 700; font-size: .8125rem; background: var(--stone); }
+.form--w { background: var(--blue) !important; color: #fff; }
+.tbl { font-size: .9375rem; }
+.tbl thead th { font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--muted); border-bottom: 1px solid var(--ink); }
+.tbl tbody tr { border-bottom: 1px solid var(--line); }
+.tbl .pos { color: var(--muted); }
+.tbl tr.our { background: var(--stone); }
+.tbl tr.our th, .tbl tr.our td { font-weight: 700; color: var(--blue); }
+.tbl--roc tr.our { background: #fbf3d8; }
+.toc a { border-radius: 4px; background: var(--stone); color: var(--blue); }
+
+/* podstránky */
+.phead { padding: 34px 0 26px; border-bottom: 1px solid var(--line); }
+.mc { padding: 22px 20px 16px; border: 1px solid var(--line); border-radius: 4px; background: #fff; }
+.mc-label { color: var(--blue); font-weight: 700; }
+.mc-mid { font-size: 2.8rem; color: var(--blue); }
+.mc--big .mc-mid { font-size: 3.4rem; }
+.chip { border: 0; border-radius: 4px; background: var(--stone); color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--blue); color: #fff; }
+.teams a { border-bottom: 1px solid var(--line); }
+.teams-n { font-size: 1.7rem; color: var(--blue); }
+.teams-s { font-weight: 700; }
+.join { background: var(--stone); border-radius: 4px; }
+.stat b { font-size: 2.2rem; color: var(--blue); }
+.contact-mail { font: 400 clamp(1.4rem, 4.4vw, 2.2rem)/1.2 var(--disp); }
+.kv dt { color: var(--blue); font-weight: 700; }
+
+/* päta */
+.ftr { border-top: 1px solid var(--line); background: var(--stone); }
+.ftr-name { font: 400 1.3rem/1.2 var(--disp); color: var(--blue); }
+.ftr-bar { border-top: 1px solid var(--line); color: var(--muted); }
+.demo { background: var(--blue); color: #fff; }
+@media (min-width: 1000px) { .shell { background: linear-gradient(90deg, var(--stone) calc(var(--side-w) - 1px), var(--line) calc(var(--side-w) - 1px) var(--side-w), transparent var(--side-w)); } .side { border-right: 0; } }

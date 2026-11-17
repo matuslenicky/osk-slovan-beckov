@@ -6,16 +6,14 @@ Ukážka: https://matuslenicky.github.io/osk-slovan-beckov/ · administrácia (u
 
 ## Vzhľad
 
-**„Hrad“.** Klubová vlajka je modro-biela s obrysom Beckovského hradu na brale a nápisom SLOVAN žltou.
+**„Bočný panel“ (dizajn v2, 17. 11. 2026).** Svetlý kameň v paneli, biela plocha, modrá z vlajky, žltá len v drobnostiach. Písmo Libre Caslon Display (titulky) a Libre Caslon Text (text).
 
-- úvod ako **vlajka s hradom v protifarbe**: na bielej polovici modrý hrad, na modrej biely (SVG, štylizovaný obrys),
-- hlavička rozdelená na **bielu a modrú polovicu** ako vlajka, kamenné kvádre na plochách a **cimburie** ako predeľ,
-- program s **dátumom vo veži** (cimburie hore, doma žltý štítok, vonku obrys),
-- výsledky ako **kamene v hradnom múre**: výhra svetlý vápenec, remíza pieskovec, prehra tmavý kameň, šírka kameňa podľa dĺžky mena súpera,
-- **„Cesta na hradby“**: ročníky áčka od 2014/15 ako veže (výška podľa súťaže a miesta, zástava = titul), tri tituly 2017/18, 2020/21 a 2022/23,
-- príbeh **Leva Jašina**, ktorý sa v auguste 1971 zastavil v Beckove na obed, s prázdnym rámom „Fotografia sa nezachovala“,
-- menu na telefóne ako **padací most z dosiek**, ktorý sa spustí z hlavičky,
-- písmo **Rubik** (nadpisy a údaje) a **Lora** (text).
+- na počítači stojí vľavo pevný panel s erbom, menu a najbližším zápasom áčka, vpravo sa posúva obsah,
+- úvod: titulok, zápas áčka, výsledky a program, celá tabuľka a tri tituly za desať rokov,
+- stránka Klub: ročníky áčka, ročník 2025/26, mládež 2026, ihrisko pri hrádzi a obec s hradom,
+- na telefóne je panel nahradený hlavičkou a menu cez celú obrazovku.
+
+Web sa skladá zo spoločného jadra v2 (`kluby-siet/engine`: `python assemble.py <web>`), vlastný je `src/site.js` (úvod, Klub, nastavenia) a `src/css/skin.css`.
 
 ## Obsah a zdroje
 

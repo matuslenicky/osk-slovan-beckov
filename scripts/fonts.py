@@ -1,4 +1,4 @@
-# Stiahne Rubik a Lora (SIL OFL 1.1) z Google Fonts, oreže na latinku strednej Európy,
+# Stiahne Libre Caslon Display a Libre Caslon Text (SIL OFL 1.1) z Google Fonts, oreže na latinku strednej Európy,
 # uloží WOFF do src/fonts a zapíše src/fonts/fonts.css.   python -I scripts/fonts.py src/fonts
 import io, re, sys, urllib.request
 from pathlib import Path
@@ -7,8 +7,8 @@ from fontTools.ttLib import TTFont
 
 out_dir = Path(sys.argv[1]); out_dir.mkdir(parents=True, exist_ok=True)
 FAMILIES = {
-    'Rubik': 'Rubik:wght@500;700;800',
-    'Lora': 'Lora:ital,wght@0,400;0,600;1,400',
+    'Libre Caslon Display': 'Libre+Caslon+Display',
+    'Libre Caslon Text': 'Libre+Caslon+Text:ital,wght@0,400;0,700;1,400',
 }
 UNICODES = (list(range(0x20, 0x7F)) + list(range(0xA0, 0x180)) + list(range(0x2000, 0x200C)) +
             list(range(0x2010, 0x2016)) + list(range(0x2018, 0x201F)) +
@@ -49,5 +49,5 @@ for fam, q in FAMILIES.items():
         font.flavor = 'woff'; font.save(out_dir / name)
         print(name, (out_dir / name).stat().st_size // 1024, 'KB')
         rules.append(f"@font-face{{font-family:'{fam}';font-style:{style};font-weight:{weight};font-display:swap;src:url({name}) format(\"woff\")}}")
-(out_dir / 'fonts.css').write_text('/* Rubik, Lora (SIL OFL 1.1), orezané na latinku strednej Európy */\n' + '\n'.join(rules) + '\n', encoding='utf8')
+(out_dir / 'fonts.css').write_text('/* Libre Caslon Display, Libre Caslon Text (SIL OFL 1.1), orezané na latinku strednej Európy */\n' + '\n'.join(rules) + '\n', encoding='utf8')
 print('fonts.css zapísané')
