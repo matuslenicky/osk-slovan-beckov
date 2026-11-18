@@ -217,6 +217,15 @@ a:hover .teams-s { text-decoration: underline; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
 /* ===== koniec základu, nasleduje skin.css webu ===== */
 
+/* tímy na úzkom displeji: poradie pod súťažou, stredný stĺpec sa nestlačí na nulu */
+@media (max-width: 459.98px) {
+  .teams { grid-template-columns: max-content minmax(0, 1fr); }
+  .teams a { grid-template-areas: 'n s' 'n l' 'n p'; row-gap: 2px; }
+  .teams-p { white-space: normal; }
+}
+/* meno klubu v hlavičke pri 320 px nesmie zájsť pod tlačidlo Menu */
+@media (max-width: 379.98px) { .hdr .brand-n { white-space: normal; line-height: 1.1; } .hdr .brand-s { display: none; } }
+
 /* OŠK Slovan Beckov – „Bočný panel“. Svetlý kameň v paneli, biela plocha, modrá z vlajky, žltá len v drobnostiach. */
 :root {
   --bg: #fff; --paper: #fff; --ink: #19203a; --muted: #585e72; --line: #e2e0d8;
@@ -318,3 +327,9 @@ a:hover .teams-s { text-decoration: underline; }
 .ftr-bar { border-top: 1px solid var(--line); color: var(--muted); }
 .demo { background: var(--blue); color: #fff; }
 @media (min-width: 1000px) { .shell { background: linear-gradient(90deg, var(--stone) calc(var(--side-w) - 1px), var(--line) calc(var(--side-w) - 1px) var(--side-w), transparent var(--side-w)); } .side { border-right: 0; } }
+/* úzky telefón: meno klubu v hlavičke sa zalomí, nezájde pod tlačidlo Menu; ročníky bez posúvania */
+@media (max-width: 379.98px) {
+  .hdr--side .brand-n { white-space: normal; line-height: 1.1; }
+  .hdr--side .brand-s { display: none; }
+  .tbl--roc th, .tbl--roc td { padding-left: 3px; padding-right: 3px; }
+}
