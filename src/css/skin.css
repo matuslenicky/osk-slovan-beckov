@@ -99,3 +99,9 @@
 .ftr-bar { border-top: 1px solid var(--line); color: var(--muted); }
 .demo { background: var(--blue); color: #fff; }
 @media (min-width: 1000px) { .shell { background: linear-gradient(90deg, var(--stone) calc(var(--side-w) - 1px), var(--line) calc(var(--side-w) - 1px) var(--side-w), transparent var(--side-w)); } .side { border-right: 0; } }
+/* úzky telefón: meno klubu v hlavičke sa zalomí, nezájde pod tlačidlo Menu; ročníky bez posúvania */
+@media (max-width: 379.98px) {
+  .hdr--side .brand-n { white-space: normal; line-height: 1.1; }
+  .hdr--side .brand-s { display: none; }
+  .tbl--roc th, .tbl--roc td { padding-left: 3px; padding-right: 3px; }
+}

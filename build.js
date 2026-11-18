@@ -172,8 +172,8 @@ const homePick = (list, n) => {
   const rest = cand.filter((m) => !a.includes(m)).slice(0, n - a.length);
   return cand.filter((m) => a.includes(m) || rest.includes(m)); // áčko má prednosť, poradie zoznamu ostáva
 };
-const homeUp = (n = 5) => homePick(upcoming, n);
-const homeRes = (n = 5) => homePick(results.filter((x) => x.score), n);
+const homeUp = (n = 5, skip = []) => homePick(upcoming.filter((m) => ![].concat(skip).includes(m)), n); // skip: zápas, ktorý už úvod zvýrazňuje
+const homeRes = (n = 5, skip = []) => homePick(results.filter((x) => x.score && ![].concat(skip).includes(x)), n);
 const MON3 = ['jan', 'feb', 'mar', 'apr', 'máj', 'jún', 'júl', 'aug', 'sep', 'okt', 'nov', 'dec'];
 
 // ---- kostra stránky ------------------------------------------------------------------------------
@@ -189,7 +189,7 @@ function layout({ route, title, desc, body, active, bodyClass = '' }) {
   const ld = route ? '' : `<script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org', '@type': 'SportsClub', name: club.nazov, sport: 'Futbal', ...(club.zalozenie ? { foundingDate: String(club.zalozenie) } : {}),
     email: club.kontakt.email,
-    address: { '@type': 'PostalAddress', streetAddress: club.adresa[0], postalCode: club.adresa[1].slice(0, 6), addressLocality: club.mesto, addressCountry: 'SK' },
+    address: { '@type': 'PostalAddress', ...(club.adresa.length > 1 ? { streetAddress: club.adresa[0] } : {}), postalCode: (club.adresa.at(-1).match(/^\d{3} ?\d{2}/) || [''])[0], addressLocality: club.mesto, addressCountry: 'SK' },
     location: { '@type': 'StadiumOrArena', name: ST.nazov, geo: { '@type': 'GeoCoordinates', latitude: ST.geo[0], longitude: ST.geo[1] } },
     sameAs: [club.sportnetUrl, club.kontakt.facebook].filter(Boolean),
   }).replace(/</g, '\\u003c')}</script>`;
@@ -508,12 +508,12 @@ add('', {
   <p class="kicker">Ročník ${SEASON} · ${esc(A.leagueName)}${A.pos ? ` · ${A.pos}. miesto ${zo(A.of)}` : ''}</p>
   <h1 class="h1">Futbal pod Beckovským hradom</h1>
   <p class="lede">Za desať ročníkov prešlo áčko z 8. ligy do krajskej VI. ligy Sever. V mládeži ${youth.length >= 2 && youth.length <= 4 ? 'hrajú' : 'hrá'} ${plural(youth.length, 'tím', 'tímy', 'tímov')}.</p>
-  ${wl ? `<p class="pause">${wl}</p>` : ''}
+  ${wl ? `<p class="pause">${nextA ? 'Zimná prestávka.' : wl}</p>` : ''}
   <div class="home-card">${pick ? card(pick, R, { big: true }) : ''}</div>
 </div></section>
 <section class="sec sec--tint" aria-labelledby="z-h"><div class="wrap">
   ${secHead('Zápasy', 'z-h', more(`${R}zapasy/`, 'Všetky zápasy'))}
-  <div class="cols2"><div><h3 class="h3">Výsledky</h3>${fxList(homeRes(5), R)}</div><div><h3 class="h3">Program</h3>${homeUp(5).length ? fxList(homeUp(5), R) : '<p>Ďalšie zápasy zatiaľ nie sú vyžrebované.</p>'}</div></div>
+  <div class="cols2"><div><h3 class="h3">Výsledky</h3>${fxList(homeRes(5, lastA), R)}</div><div><h3 class="h3">Program</h3>${homeUp(5, nextA).length ? fxList(homeUp(5, nextA), R) : '<p>Ďalšie zápasy zatiaľ nie sú vyžrebované.</p>'}</div></div>
 </div></section>
 ${A.table ? `<section class="sec" aria-labelledby="t-h"><div class="wrap">${secHead(esc(A.leagueName), 't-h', more(`${R}tabulky/`, 'Všetky tabuľky'), 'Áčko')}${tableHtml(A.table, R)}</div></section>` : ''}
 <section class="sec sec--tint" aria-labelledby="ti-h"><div class="wrap">

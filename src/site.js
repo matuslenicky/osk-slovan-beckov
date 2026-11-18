@@ -24,12 +24,12 @@ add('', {
   <p class="kicker">Ročník ${SEASON} · ${esc(A.leagueName)}${A.pos ? ` · ${A.pos}. miesto ${zo(A.of)}` : ''}</p>
   <h1 class="h1">Futbal pod Beckovským hradom</h1>
   <p class="lede">Za desať ročníkov prešlo áčko z 8. ligy do krajskej VI. ligy Sever. V mládeži ${youth.length >= 2 && youth.length <= 4 ? 'hrajú' : 'hrá'} ${plural(youth.length, 'tím', 'tímy', 'tímov')}.</p>
-  ${wl ? `<p class="pause">${wl}</p>` : ''}
+  ${wl ? `<p class="pause">${nextA ? 'Zimná prestávka.' : wl}</p>` : ''}
   <div class="home-card">${pick ? card(pick, R, { big: true }) : ''}</div>
 </div></section>
 <section class="sec sec--tint" aria-labelledby="z-h"><div class="wrap">
   ${secHead('Zápasy', 'z-h', more(`${R}zapasy/`, 'Všetky zápasy'))}
-  <div class="cols2"><div><h3 class="h3">Výsledky</h3>${fxList(homeRes(5), R)}</div><div><h3 class="h3">Program</h3>${homeUp(5).length ? fxList(homeUp(5), R) : '<p>Ďalšie zápasy zatiaľ nie sú vyžrebované.</p>'}</div></div>
+  <div class="cols2"><div><h3 class="h3">Výsledky</h3>${fxList(homeRes(5, lastA), R)}</div><div><h3 class="h3">Program</h3>${homeUp(5, nextA).length ? fxList(homeUp(5, nextA), R) : '<p>Ďalšie zápasy zatiaľ nie sú vyžrebované.</p>'}</div></div>
 </div></section>
 ${A.table ? `<section class="sec" aria-labelledby="t-h"><div class="wrap">${secHead(esc(A.leagueName), 't-h', more(`${R}tabulky/`, 'Všetky tabuľky'), 'Áčko')}${tableHtml(A.table, R)}</div></section>` : ''}
 <section class="sec sec--tint" aria-labelledby="ti-h"><div class="wrap">
